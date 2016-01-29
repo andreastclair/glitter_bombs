@@ -45,8 +45,57 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  background-color: white;
+  color: black; }
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+.container {
+  margin: 0 auto;
+  width: 100%; }
+
+/*
+  ========================================
+  Type
+  ========================================
+*/
 h1 {
+  font-size: 48px;
   font-size: 3em;
   font-family: sans-serif; }
+
+a {
+  color: black; }
+  a:hover {
+    color: pink; }
+
+nav {
+  text-align: center; }
+  nav li {
+    display: inline;
+    margin: 0 1em; }
+
+section {
+  width: 100%;
+  padding: 1em;
+  margin: 0 auto;
+  height: 30em;
+  background-color: grey; }
+
+header {
+  padding: 1em;
+  background-color: pink; }
 
 /*# sourceMappingURL=style.css.map */
