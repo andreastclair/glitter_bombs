@@ -97,5 +97,9 @@ section {
 header {
   padding: 1em;
   background-color: pink; }
+  header .cart {
+    float: right; }
+    header .cart:hover {
+      color: white; }
 
 /*# sourceMappingURL=style.css.map */

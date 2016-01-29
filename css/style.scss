@@ -70,4 +70,10 @@ section {
 header {
 	padding: 1em;
 	background-color: pink;
+	.cart {
+		float: right;
+		&:hover {
+			color: white;
+		}
+	}
 }
