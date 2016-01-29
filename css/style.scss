@@ -1,0 +1,11 @@
+@import 'reset';
+
+@mixin font($em){
+	font-size: ($em*16) + px;
+	font-size: ($em) + em;
+}
+
+h1 {
+	font-size: 3em;
+	font-family: sans-serif;
+}
