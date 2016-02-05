@@ -74,18 +74,29 @@ body {
 h1 {
   font-size: 48px;
   font-size: 3em;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  text-align: center;
+  text-transform: uppercase; }
 
 a {
   color: black; }
   a:hover {
-    color: pink; }
+    color: #EE7763; }
+
+header {
+  height: 40em;
+  padding: 15em;
+  background-color: #FBC54A; }
 
 nav {
-  text-align: center; }
+  text-align: center;
+  height: 5em;
+  padding: 30px; }
   nav li {
     display: inline;
-    margin: 0 1em; }
+    margin: 0 1.5em; }
+    nav li a {
+      text-decoration: none; }
 
 section {
   width: 100%;
@@ -94,12 +105,21 @@ section {
   height: 30em;
   background-color: grey; }
 
-header {
+.one {
+  background-color: #1EAABB; }
+
+.two {
+  background-color: #EEEEEE; }
+
+.three {
+  background-color: #EE7763; }
+
+.four {
+  background-color: #22DD8C; }
+
+footer {
   padding: 1em;
-  background-color: pink; }
-  header .cart {
-    float: right; }
-    header .cart:hover {
-      color: white; }
+  height: 10em;
+  background-color: #333333; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 @import 'reset';
+@import 'colors';
 
 @mixin font($em){
 	font-size: ($em*16) + px;
@@ -39,25 +40,36 @@ body {
 h1 {
 	@include font(3);
 	font-family: sans-serif;
+	text-align: center;
+	text-transform: uppercase;
 	}
 
 a {
 	color: black;
 	&:hover {
-		color: pink;
+		color: $pink;
 	}
 }	
 
 	
+header {
+	height: 40em;
+	padding: 15em;
+	background-color: $yellow;
+}
 
 nav {
 	text-align: center;
+	height: 5em;
+	padding: 30px;
 	li {
 		display: inline;
-		margin: 0 1em;
+		margin: 0 1.5em;
+		a {
+			text-decoration: none;
+		}
 	}
 }
-
 
 section {
 	width: 100%;
@@ -67,13 +79,25 @@ section {
 	background-color: grey;
 }
 
-header {
-	padding: 1em;
-	background-color: pink;
-	.cart {
-		float: right;
-		&:hover {
-			color: white;
-		}
-	}
+.one {
+	background-color: $blue;
 }
+
+.two {
+	background-color: $white;
+}
+
+.three {
+	background-color: $pink;
+}
+
+.four {
+	background-color: $green;
+}
+
+footer {
+	padding: 1em;
+	height: 10em;
+	background-color: $dkgrey;
+}
+
