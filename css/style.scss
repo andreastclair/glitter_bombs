@@ -14,21 +14,24 @@
           box-sizing: border-box;
 }
 
-body {
-	font-family: sans-serif;
-	background-color: white;
-	color: black;
-}
-
 /*
   ========================================
   Grid
   ========================================
 */
 
+body {
+	font-family: "museo-sans",sans-serif;
+	background-color: $white;
+	color: $dkgrey;
+	@include font(1);
+	line-height: 1.5em;
+}
+
 .container {
 	margin: 0 auto;
 	width: 100%;
+	background-color: $teal;
 }
 
 /*
@@ -39,65 +42,145 @@ body {
 
 h1 {
 	@include font(3);
-	font-family: sans-serif;
 	text-align: center;
 	text-transform: uppercase;
-	}
+}
 
 a {
-	color: black;
+	color: $white;
 	&:hover {
 		color: $pink;
 	}
-}	
-
-	
-header {
-	height: 40em;
-	padding: 15em;
-	background-color: $yellow;
 }
 
-nav {
-	text-align: center;
-	height: 5em;
-	padding: 30px;
-	li {
-		display: inline;
-		margin: 0 1.5em;
-		a {
-			text-decoration: none;
+span {
+	color: $teal;
+	a {
+		text-decoration: none;
+		color: $teal;
+		&:hover {
+			color: $pink;
+		}
+	}
+}	
+
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+	
+header {
+	width: 100%;
+	background-color: $teal;
+	.logo {
+		margin: 0 auto;
+		display: block;
+		width: 200px;
+	}
+	nav {
+		text-align: center;
+		height: 5em;
+		padding: 20px;
+		li {
+			display: inline;
+			margin: 0 1.1em;
+			a {
+				text-decoration: none;
+			}
 		}
 	}
 }
 
-section {
-	width: 100%;
-	padding: 1em;
-	margin: 0 auto;
-	height: 30em;
-	background-color: grey;
+/*
+  ========================================
+  Content
+  ========================================
+*/
+
+// 
+
+.content {
+	.what {
+		padding: 10%;
+		width: 100%;
+		background-color: $orange;
+		.drone {
+			display: none;
+			// width: 100%;
+			// margin: 20px auto;
+		}
+	}
+	.how {
+		padding: 10% 0;
+		width: 100%;
+		background-color: $pink;
+		.step {
+			width: 100%;
+			p {
+				color: white;
+				background-color: $teal;
+				padding: 2%;
+			}
+			.box {
+				background-color: white;
+				.step-image {
+					width: 90%;
+					margin: 0 auto;
+					display: block;
+				}
+				.bomb {
+					width: 20%;
+					padding: 1em 0;
+				}
+				.victims {
+					width: 60%;
+					padding-top: 1em;
+				}
+				.track-bomb {
+					padding-top: 1em;
+				}
+				.laugh {
+					width: 35%;
+				}
+			}
+		}	
+	}
+
+	.order {
+		height: 10em;
+		width: 100%;
+		background-color: $white;
+	}
+	.track {
+		height: 10em;
+		width: 100%;
+		background-color: $teal;
+	}
 }
 
-.one {
-	background-color: $blue;
-}
-
-.two {
-	background-color: $white;
-}
-
-.three {
-	background-color: $pink;
-}
-
-.four {
-	background-color: $green;
-}
+/*
+  ========================================
+  Footer
+  ========================================
+*/
 
 footer {
-	padding: 1em;
 	height: 10em;
+	width: 100%;
 	background-color: $dkgrey;
 }
+
+@import 'mid-media';
+@import 'max-media';
+
+
+
+
+
+
+
+
+
 

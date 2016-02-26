@@ -52,19 +52,23 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
-  font-family: sans-serif;
-  background-color: white;
-  color: black; }
-
 /*
   ========================================
   Grid
   ========================================
 */
+body {
+  font-family: "museo-sans",sans-serif;
+  background-color: #f7e7d0;
+  color: #333333;
+  font-size: 16px;
+  font-size: 1em;
+  line-height: 1.5em; }
+
 .container {
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  background-color: #12847e; }
 
 /*
   ========================================
@@ -74,52 +78,98 @@ body {
 h1 {
   font-size: 48px;
   font-size: 3em;
-  font-family: sans-serif;
   text-align: center;
   text-transform: uppercase; }
 
 a {
-  color: black; }
+  color: #f7e7d0; }
   a:hover {
-    color: #EE7763; }
+    color: #c32237; }
 
+span {
+  color: #12847e; }
+  span a {
+    text-decoration: none;
+    color: #12847e; }
+    span a:hover {
+      color: #c32237; }
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
 header {
-  height: 40em;
-  padding: 15em;
-  background-color: #FBC54A; }
-
-nav {
-  text-align: center;
-  height: 5em;
-  padding: 30px; }
-  nav li {
-    display: inline;
-    margin: 0 1.5em; }
-    nav li a {
-      text-decoration: none; }
-
-section {
   width: 100%;
-  padding: 1em;
-  margin: 0 auto;
-  height: 30em;
-  background-color: grey; }
+  background-color: #12847e; }
+  header .logo {
+    margin: 0 auto;
+    display: block;
+    width: 200px; }
+  header nav {
+    text-align: center;
+    height: 5em;
+    padding: 20px; }
+    header nav li {
+      display: inline;
+      margin: 0 1.1em; }
+      header nav li a {
+        text-decoration: none; }
 
-.one {
-  background-color: #1EAABB; }
-
-.two {
-  background-color: #EEEEEE; }
-
-.three {
-  background-color: #EE7763; }
-
-.four {
-  background-color: #22DD8C; }
-
-footer {
-  padding: 1em;
+/*
+  ========================================
+  Content
+  ========================================
+*/
+.content .what {
+  padding: 10%;
+  width: 100%;
+  background-color: #f9a540; }
+  .content .what .drone {
+    display: none; }
+.content .how {
+  padding: 10% 0;
+  width: 100%;
+  background-color: #c32237; }
+  .content .how .step {
+    width: 100%; }
+    .content .how .step p {
+      color: white;
+      background-color: #12847e;
+      padding: 2%; }
+    .content .how .step .box {
+      background-color: white; }
+      .content .how .step .box .step-image {
+        width: 90%;
+        margin: 0 auto;
+        display: block; }
+      .content .how .step .box .bomb {
+        width: 20%;
+        padding: 1em 0; }
+      .content .how .step .box .victims {
+        width: 60%;
+        padding-top: 1em; }
+      .content .how .step .box .track-bomb {
+        padding-top: 1em; }
+      .content .how .step .box .laugh {
+        width: 35%; }
+.content .order {
   height: 10em;
+  width: 100%;
+  background-color: #f7e7d0; }
+.content .track {
+  height: 10em;
+  width: 100%;
+  background-color: #12847e; }
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+footer {
+  height: 10em;
+  width: 100%;
   background-color: #333333; }
 
 /*# sourceMappingURL=style.css.map */
