@@ -51,6 +51,7 @@ h2 {
 	font-weight: bold;
 	line-height: 1.2em;
 	@include font(2);
+	// background-color: $dkgrey;
 }
 
 h3 {
@@ -137,7 +138,7 @@ header {
 		}
 		.step {
 			width: 100%;
-			margin: 15px auto;
+			margin: 0 auto;
 			p {
 				color: white;
 				background-color: $teal;
@@ -196,16 +197,34 @@ header {
 			}	
 			.bomb-options {
 				display: block;
-				margin: 0 auto 10px auto;
+				margin: 0 auto;
 				width: 100%;
 				max-width: 450px;
 			}
 		}
 	}
 	.track {
-		height: 10em;
+		padding: 10%;
 		width: 100%;
 		background-color: $teal;
+		.big-track {
+			color: $white;
+		}
+		.tracking-info {
+			background-color: $orange;
+			margin: 0 auto;
+			width: 100%;
+			padding: 5%;
+			border-radius: 25px;
+			.search {
+				width: 20px;
+			}
+		}
+		iframe {
+			max-width: 90%;
+			display: block;
+			margin: 10px auto;
+		}
 	}
 }
 
@@ -216,9 +235,26 @@ header {
 */
 
 footer {
-	height: 10em;
 	width: 100%;
 	background-color: $dkgrey;
+	text-align: center;
+	padding: 15px;
+	.extra {
+		p {
+			color: $white;
+		}
+	}
+	.social {
+		.icon {
+			width: 40px;
+			margin: 10px;
+		}
+	}
+	.contact {
+		p {
+			color: $white;
+		}
+	}
 }
 
 @import 'mid-media';

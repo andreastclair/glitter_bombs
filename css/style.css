@@ -152,7 +152,7 @@ header {
       color: #f7e7d0; }
     .content .how .step {
       width: 100%;
-      margin: 15px auto; }
+      margin: 0 auto; }
       .content .how .step p {
         color: white;
         background-color: #12847e;
@@ -196,13 +196,27 @@ header {
           color: #c32237; }
     .content .order .bomb-type .bomb-options {
       display: block;
-      margin: 0 auto 10px auto;
+      margin: 0 auto;
       width: 100%;
       max-width: 450px; }
   .content .track {
-    height: 10em;
+    padding: 10%;
     width: 100%;
     background-color: #12847e; }
+    .content .track .big-track {
+      color: #f7e7d0; }
+    .content .track .tracking-info {
+      background-color: #f9a540;
+      margin: 0 auto;
+      width: 100%;
+      padding: 5%;
+      border-radius: 25px; }
+      .content .track .tracking-info .search {
+        width: 20px; }
+    .content .track iframe {
+      max-width: 90%;
+      display: block;
+      margin: 10px auto; }
 
 /*
   ========================================
@@ -210,8 +224,16 @@ header {
   ========================================
 */
 footer {
-  height: 10em;
   width: 100%;
-  background-color: #333333; }
+  background-color: #333333;
+  text-align: center;
+  padding: 15px; }
+  footer .extra p {
+    color: #f7e7d0; }
+  footer .social .icon {
+    width: 40px;
+    margin: 10px; }
+  footer .contact p {
+    color: #f7e7d0; }
 
 /*# sourceMappingURL=style.css.map */
