@@ -49,6 +49,12 @@ h1 {
 h2 {
 	font-family: "franklin-gothic-urw-cond",sans-serif;
 	font-weight: bold;
+	line-height: 1.2em;
+	@include font(2);
+}
+
+h3 {
+	@include font(1.2);
 }
 
 a {
@@ -81,6 +87,7 @@ header {
 	width: 100%;
 	background-color: $teal;
 	position: fixed;
+	z-index: 100;
 	.logo {
 		margin: 0 auto;
 		width: 200px;
@@ -113,8 +120,6 @@ header {
 		width: 100%;
 		background-color: $orange;
 		.big-what {
-			@include font(2);
-			line-height: 1.2em;
 			color: $pink;
 		}
 		.drone {
@@ -128,8 +133,6 @@ header {
 		width: 100%;
 		background-color: $pink;
 		.big-how {
-			@include font(2);
-			line-height: 1.2em;
 			color: $white;
 		}
 		.step {
@@ -173,15 +176,30 @@ header {
 		width: 100%;
 		background-color: $white;
 		.big-order {
-			@include font(2);
-			line-height: 1.2em;
-			color: $orange;
-			padding: 10% 0 4% 10%;
+			color: $teal;
+			padding: 10% 0 0 10%;
 		}
-		.bomb-options {
-			display: block;
-			margin: 0 auto 10px auto;
-			width: 100%;
+		.bomb-type {
+			h3 {
+			text-align: center;
+			position: relative;
+			top: 5.8em;
+			background-color: rgba(255,255,255,.6);
+			padding: 4px;
+				a {
+					text-decoration: none;
+					color: $dkgrey;
+					&:hover {
+						color: $pink;
+					}
+				}
+			}	
+			.bomb-options {
+				display: block;
+				margin: 0 auto 10px auto;
+				width: 100%;
+				max-width: 450px;
+			}
 		}
 	}
 	.track {

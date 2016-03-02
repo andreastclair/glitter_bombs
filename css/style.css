@@ -83,7 +83,14 @@ h1 {
 
 h2 {
   font-family: "franklin-gothic-urw-cond",sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 1.2em;
+  font-size: 32px;
+  font-size: 2em; }
+
+h3 {
+  font-size: 19.2px;
+  font-size: 1.2em; }
 
 a {
   color: #f7e7d0; }
@@ -107,7 +114,8 @@ span {
 header {
   width: 100%;
   background-color: #12847e;
-  position: fixed; }
+  position: fixed;
+  z-index: 100; }
   header .logo {
     margin: 0 auto;
     width: 200px;
@@ -133,9 +141,6 @@ header {
     width: 100%;
     background-color: #f9a540; }
     .content .what .big-what {
-      font-size: 32px;
-      font-size: 2em;
-      line-height: 1.2em;
       color: #c32237; }
     .content .what .drone {
       display: none; }
@@ -144,9 +149,6 @@ header {
     width: 100%;
     background-color: #c32237; }
     .content .how .big-how {
-      font-size: 32px;
-      font-size: 2em;
-      line-height: 1.2em;
       color: #f7e7d0; }
     .content .how .step {
       width: 100%;
@@ -179,15 +181,24 @@ header {
     width: 100%;
     background-color: #f7e7d0; }
     .content .order .big-order {
-      font-size: 32px;
-      font-size: 2em;
-      line-height: 1.2em;
-      color: #f9a540;
-      padding: 10% 0 4% 10%; }
-    .content .order .bomb-options {
+      color: #12847e;
+      padding: 10% 0 0 10%; }
+    .content .order .bomb-type h3 {
+      text-align: center;
+      position: relative;
+      top: 5.8em;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 4px; }
+      .content .order .bomb-type h3 a {
+        text-decoration: none;
+        color: #333333; }
+        .content .order .bomb-type h3 a:hover {
+          color: #c32237; }
+    .content .order .bomb-type .bomb-options {
       display: block;
       margin: 0 auto 10px auto;
-      width: 100%; }
+      width: 100%;
+      max-width: 450px; }
   .content .track {
     height: 10em;
     width: 100%;
