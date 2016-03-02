@@ -46,10 +46,16 @@ h1 {
 	text-transform: uppercase;
 }
 
+h2 {
+	font-family: "franklin-gothic-urw-cond",sans-serif;
+	font-weight: bold;
+}
+
 a {
 	color: $white;
 	&:hover {
 		color: $pink;
+		font-weight: bold;
 	}
 }
 
@@ -74,15 +80,16 @@ span {
 header {
 	width: 100%;
 	background-color: $teal;
+	position: fixed;
 	.logo {
 		margin: 0 auto;
-		display: block;
 		width: 200px;
+		display: block;
 	}
 	nav {
 		text-align: center;
-		height: 5em;
-		padding: 20px;
+		// height: 5em;
+		padding: 10px 20px;
 		li {
 			display: inline;
 			margin: 0 1.1em;
@@ -99,13 +106,17 @@ header {
   ========================================
 */
 
-// 
-
 .content {
+	padding-top: 8em;
 	.what {
 		padding: 10%;
 		width: 100%;
 		background-color: $orange;
+		.big-what {
+			@include font(2);
+			line-height: 1.2em;
+			color: $pink;
+		}
 		.drone {
 			display: none;
 			// width: 100%;
@@ -113,25 +124,35 @@ header {
 		}
 	}
 	.how {
-		padding: 10% 0;
+		padding: 10%;
 		width: 100%;
 		background-color: $pink;
+		.big-how {
+			@include font(2);
+			line-height: 1.2em;
+			color: $white;
+		}
 		.step {
 			width: 100%;
+			margin: 15px auto;
 			p {
 				color: white;
 				background-color: $teal;
-				padding: 2%;
+				border-radius: 25px 25px 0 0;
+				padding: 2% 0 2% 5%;
 			}
 			.box {
 				background-color: white;
+				border-radius: 0 0 25px 25px;
 				.step-image {
 					width: 90%;
+					max-width: 300px;
 					margin: 0 auto;
 					display: block;
 				}
 				.bomb {
 					width: 20%;
+					max-width: 100px;
 					padding: 1em 0;
 				}
 				.victims {
@@ -147,11 +168,21 @@ header {
 			}
 		}	
 	}
-
 	.order {
-		height: 10em;
+		// padding: 10%;
 		width: 100%;
 		background-color: $white;
+		.big-order {
+			@include font(2);
+			line-height: 1.2em;
+			color: $orange;
+			padding: 10% 0 4% 10%;
+		}
+		.bomb-options {
+			display: block;
+			margin: 0 auto 10px auto;
+			width: 100%;
+		}
 	}
 	.track {
 		height: 10em;

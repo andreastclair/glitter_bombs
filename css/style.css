@@ -81,10 +81,15 @@ h1 {
   text-align: center;
   text-transform: uppercase; }
 
+h2 {
+  font-family: "franklin-gothic-urw-cond",sans-serif;
+  font-weight: bold; }
+
 a {
   color: #f7e7d0; }
   a:hover {
-    color: #c32237; }
+    color: #c32237;
+    font-weight: bold; }
 
 span {
   color: #12847e; }
@@ -101,15 +106,15 @@ span {
 */
 header {
   width: 100%;
-  background-color: #12847e; }
+  background-color: #12847e;
+  position: fixed; }
   header .logo {
     margin: 0 auto;
-    display: block;
-    width: 200px; }
+    width: 200px;
+    display: block; }
   header nav {
     text-align: center;
-    height: 5em;
-    padding: 20px; }
+    padding: 10px 20px; }
     header nav li {
       display: inline;
       margin: 0 1.1em; }
@@ -121,46 +126,72 @@ header {
   Content
   ========================================
 */
-.content .what {
-  padding: 10%;
-  width: 100%;
-  background-color: #f9a540; }
-  .content .what .drone {
-    display: none; }
-.content .how {
-  padding: 10% 0;
-  width: 100%;
-  background-color: #c32237; }
-  .content .how .step {
-    width: 100%; }
-    .content .how .step p {
-      color: white;
-      background-color: #12847e;
-      padding: 2%; }
-    .content .how .step .box {
-      background-color: white; }
-      .content .how .step .box .step-image {
-        width: 90%;
-        margin: 0 auto;
-        display: block; }
-      .content .how .step .box .bomb {
-        width: 20%;
-        padding: 1em 0; }
-      .content .how .step .box .victims {
-        width: 60%;
-        padding-top: 1em; }
-      .content .how .step .box .track-bomb {
-        padding-top: 1em; }
-      .content .how .step .box .laugh {
-        width: 35%; }
-.content .order {
-  height: 10em;
-  width: 100%;
-  background-color: #f7e7d0; }
-.content .track {
-  height: 10em;
-  width: 100%;
-  background-color: #12847e; }
+.content {
+  padding-top: 8em; }
+  .content .what {
+    padding: 10%;
+    width: 100%;
+    background-color: #f9a540; }
+    .content .what .big-what {
+      font-size: 32px;
+      font-size: 2em;
+      line-height: 1.2em;
+      color: #c32237; }
+    .content .what .drone {
+      display: none; }
+  .content .how {
+    padding: 10%;
+    width: 100%;
+    background-color: #c32237; }
+    .content .how .big-how {
+      font-size: 32px;
+      font-size: 2em;
+      line-height: 1.2em;
+      color: #f7e7d0; }
+    .content .how .step {
+      width: 100%;
+      margin: 15px auto; }
+      .content .how .step p {
+        color: white;
+        background-color: #12847e;
+        border-radius: 25px 25px 0 0;
+        padding: 2% 0 2% 5%; }
+      .content .how .step .box {
+        background-color: white;
+        border-radius: 0 0 25px 25px; }
+        .content .how .step .box .step-image {
+          width: 90%;
+          max-width: 300px;
+          margin: 0 auto;
+          display: block; }
+        .content .how .step .box .bomb {
+          width: 20%;
+          max-width: 100px;
+          padding: 1em 0; }
+        .content .how .step .box .victims {
+          width: 60%;
+          padding-top: 1em; }
+        .content .how .step .box .track-bomb {
+          padding-top: 1em; }
+        .content .how .step .box .laugh {
+          width: 35%; }
+  .content .order {
+    width: 100%;
+    background-color: #f7e7d0; }
+    .content .order .big-order {
+      font-size: 32px;
+      font-size: 2em;
+      line-height: 1.2em;
+      color: #f9a540;
+      padding: 10% 0 4% 10%; }
+    .content .order .bomb-options {
+      display: block;
+      margin: 0 auto 10px auto;
+      width: 100%; }
+  .content .track {
+    height: 10em;
+    width: 100%;
+    background-color: #12847e; }
 
 /*
   ========================================
