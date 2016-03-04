@@ -34,6 +34,10 @@ body {
 	background-color: $teal;
 }
 
+.clear-fix {
+	clear: both;
+}
+
 /*
   ========================================
   Type
@@ -51,12 +55,13 @@ h2 {
 	font-weight: bold;
 	line-height: 1.2em;
 	@include font(2);
-	// background-color: $dkgrey;
 }
 
 h3 {
 	@include font(1.2);
 }
+
+
 
 a {
 	color: $white;
@@ -75,7 +80,7 @@ span {
 			color: $pink;
 		}
 	}
-}	
+}
 
 
 /*
@@ -120,60 +125,40 @@ header {
 		padding: 10%;
 		width: 100%;
 		background-color: $orange;
+		position: relative;
+		.copy {
+			z-index: 95;
+		}
 		.big-what {
 			color: $pink;
+			z-index: 90;
 		}
 		.drone {
-			display: none;
-			// width: 100%;
-			// margin: 20px auto;
+			visibility: hidden;
+			position: absolute;
 		}
 	}
 	.how {
 		padding: 10%;
 		width: 100%;
 		background-color: $pink;
+		position: relative;
 		.big-how {
 			color: $white;
 		}
 		.step {
-			width: 100%;
-			margin: 0 auto;
-			p {
-				color: white;
-				background-color: $teal;
-				border-radius: 25px 25px 0 0;
-				padding: 2% 0 2% 5%;
-			}
-			.box {
-				background-color: white;
-				border-radius: 0 0 25px 25px;
+			margin-bottom: 1em;
 				.step-image {
-					width: 90%;
-					max-width: 300px;
+					width: 100%;
+					border-radius: 25px;
 					margin: 0 auto;
 					display: block;
 				}
-				.bomb {
-					width: 20%;
-					max-width: 100px;
-					padding: 1em 0;
-				}
-				.victims {
-					width: 60%;
-					padding-top: 1em;
-				}
-				.track-bomb {
-					padding-top: 1em;
-				}
-				.laugh {
-					width: 35%;
-				}
-			}
+			
 		}	
 	}
 	.order {
-		// padding: 10%;
+		position: relative;
 		width: 100%;
 		background-color: $white;
 		.big-order {
@@ -183,10 +168,12 @@ header {
 		.bomb-type {
 			h3 {
 			text-align: center;
+			margin: 0 auto;
 			position: relative;
 			top: 5.8em;
 			background-color: rgba(255,255,255,.6);
 			padding: 4px;
+			max-width: 450px;
 				a {
 					text-decoration: none;
 					color: $dkgrey;
@@ -200,6 +187,10 @@ header {
 				margin: 0 auto;
 				width: 100%;
 				max-width: 450px;
+			}
+			.bomb-options-2 {
+				visibility: hidden;
+				position: absolute;
 			}
 		}
 	}

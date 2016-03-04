@@ -1,4 +1,222 @@
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 500px) {
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+
+/*
+  ========================================
+  Type
+  ========================================
+*/
+
+h1 {
+	@include font(3);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: "franklin-gothic-urw-cond",sans-serif;
+	font-weight: bold;
+	line-height: 0em;
+	@include font(2);
+	background-color: red;		
+}
+
+h3 {
+	@include font(1.2);
+}
+
+a {
+	color: $white;
+	&:hover {
+		color: $pink;
+		font-weight: bold;
+	}
+}
+
+span {
+	color: $teal;
+	a {
+		text-decoration: none;
+		color: $teal;
+		&:hover {
+			color: $pink;
+		}
+	}
+}	
+
+p {
+	max-width: 75%;
+	margin: 0 auto;
+}
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+/*
+  ========================================
+  Content
+  ========================================
+*/
+
+.content {
+	// padding-top: 8em;
+	.what {
+		padding: 10%;
+		z-index: 85;
+		.copy {
+			position: relative;
+			z-index: 95;
+		}
+		.big-what {
+			@include font(7);
+			color: rgba(247,231,208,.5);
+			transform: rotate(-90deg);
+			transform-origin: left top 0;
+			position: absolute;
+			top: 5em;
+			left: .5em;
+			z-index: 10;
+		}
+		.drone {
+			visibility: visible;
+			position: relative;
+			width: 90%;
+			max-width: 300px;
+			display: block;
+			margin: 20px auto 0 auto;
+			z-index: 95;
+		}
+	}
+	.how {
+		padding: 10%;
+		.big-how {
+			@include font(7);
+			color: rgba(247,231,208,.5);
+			position: absolute;	
+			left: -.2em;
+			top: .63em;		
+		}
+		.all-steps {
+			margin-top: 4.2em;
+			position: relative;
+			z-index: 90;
+			.step {
+				margin-bottom: 1em;
+					.step-image {
+						width: 100%;
+						max-width: 300px;
+					}
+			}
+		}	
+	}
+	.order {
+		padding: 0 5%;
+		.big-order {
+			@include font(5);
+			color: rgba(195,43,55,.3);
+			position: absolute;
+			right: -10px;
+		}
+		.bomb-type {
+			h3 {
+				display: none;
+				a {
+					text-decoration: none;
+					color: $dkgrey;
+					&:hover {
+						color: $pink;
+					}
+				}
+			}	
+			.bomb-options {
+				display: none;
+			}
+			.bomb-options-2 {
+				visibility: visible;
+				position: relative;
+				width: 30%;
+				float: left;
+				margin-bottom: 40px;
+			}
+			.flower {
+				margin: 0 5%;
+			}
+		}
+	}
+	.track {
+		padding: 10%;
+		width: 100%;
+		background-color: $teal;
+		.big-track {
+			color: $white;
+		}
+		.tracking-info {
+			background-color: $orange;
+			margin: 0 auto;
+			width: 100%;
+			padding: 5%;
+			border-radius: 25px;
+			.search {
+				width: 20px;
+			}
+		}
+		iframe {
+			max-width: 90%;
+			display: block;
+			margin: 10px auto;
+		}
+	}
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+footer {
+	width: 100%;
+	background-color: $dkgrey;
+	text-align: center;
+	padding: 15px;
+	.extra {
+		p {
+			color: $white;
+		}
+	}
+	.social {
+		.icon {
+			width: 40px;
+			margin: 10px;
+		}
+	}
+	.contact {
+		p {
+			color: $white;
+		}
+	}
+}
+
+@import 'max-media';
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
