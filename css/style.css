@@ -194,19 +194,25 @@ header {
     .content .order .bomb-type .bomb-options-2 {
       visibility: hidden;
       position: absolute; }
+    .content .order .bomb-type .bomb-desc {
+      visibility: hidden;
+      position: absolute; }
   .content .track {
     padding: 10%;
     width: 100%;
-    background-color: #12847e; }
+    background-color: #12847e;
+    position: relative; }
     .content .track .big-track {
       color: #f7e7d0; }
-    .content .track .tracking-info {
+    .content .track .order-number {
       background-color: #f9a540;
       margin: 0 auto;
       width: 100%;
       padding: 5%;
       border-radius: 25px; }
-      .content .track .tracking-info .search {
+      .content .track .order-number li {
+        display: inline; }
+      .content .track .order-number .search {
         width: 20px; }
     .content .track iframe {
       max-width: 90%;
@@ -295,8 +301,8 @@ footer {
       position: relative;
       z-index: 95; }
     .content .what .big-what {
-      font-size: 112px;
-      font-size: 7em;
+      font-size: 128px;
+      font-size: 8em;
       color: rgba(247, 231, 208, 0.5);
       transform: rotate(-90deg);
       transform-origin: left top 0;
@@ -352,27 +358,38 @@ footer {
       position: relative;
       width: 30%;
       float: left;
-      margin-bottom: 40px; }
+      margin: 40px 0; }
     .content .order .bomb-type .flower {
-      margin: 0 5%; }
-  .content .track {
-    padding: 10%;
+      margin: 40px 5%; }
+    .content .order .bomb-type .bomb-desc {
+      visibility: hidden;
+      position: absolute; }
+  .content .track .big-track {
+    font-size: 96px;
+    font-size: 6em;
+    color: rgba(247, 231, 208, 0.3);
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    position: absolute;
+    top: 5em;
+    left: .5em;
+    z-index: 10; }
+  .content .track .order-number {
+    background-color: #f9a540;
+    margin: 0 auto;
     width: 100%;
-    background-color: #12847e; }
-    .content .track .big-track {
-      color: #f7e7d0; }
-    .content .track .tracking-info {
-      background-color: #f9a540;
-      margin: 0 auto;
-      width: 100%;
-      padding: 5%;
-      border-radius: 25px; }
-      .content .track .tracking-info .search {
-        width: 20px; }
-    .content .track iframe {
-      max-width: 90%;
-      display: block;
-      margin: 10px auto; }
+    padding: 15px;
+    border-radius: 25px;
+    z-index: 90;
+    position: relative; }
+    .content .track .order-number li {
+      display: inline; }
+    .content .track .order-number .search {
+      width: 20px; }
+  .content .track iframe {
+    max-width: 90%;
+    display: block;
+    margin: 10px auto; }
 
   /*
     ========================================

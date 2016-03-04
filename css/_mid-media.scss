@@ -76,7 +76,7 @@ p {
 			z-index: 95;
 		}
 		.big-what {
-			@include font(7);
+			@include font(8);
 			color: rgba(247,231,208,.5);
 			transform: rotate(-90deg);
 			transform-origin: left top 0;
@@ -144,26 +144,39 @@ p {
 				position: relative;
 				width: 30%;
 				float: left;
-				margin-bottom: 40px;
+				margin: 40px 0;
 			}
 			.flower {
-				margin: 0 5%;
+				margin: 40px 5%;
+			}
+			.bomb-desc {
+				visibility: hidden;
+				position: absolute;
 			}
 		}
 	}
 	.track {
-		padding: 10%;
-		width: 100%;
-		background-color: $teal;
 		.big-track {
-			color: $white;
+			@include font(6);
+			color: rgba(247,231,208,.3);
+			transform: rotate(-90deg);
+			transform-origin: left top 0;
+			position: absolute;
+			top: 5em;
+			left: .5em;
+			z-index: 10;
 		}
-		.tracking-info {
+		.order-number {
 			background-color: $orange;
 			margin: 0 auto;
 			width: 100%;
-			padding: 5%;
+			padding: 15px;
 			border-radius: 25px;
+			z-index: 90;
+			position: relative;
+			li {
+				display: inline;
+			}
 			.search {
 				width: 20px;
 			}
