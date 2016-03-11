@@ -62,7 +62,9 @@ h3 {
 	@include font(1.2);
 }
 
-
+h4 {
+	@include font(1.2);
+}
 
 a {
 	color: $white;
@@ -82,7 +84,6 @@ span {
 		}
 	}
 }
-
 
 /*
   ========================================
@@ -120,9 +121,9 @@ header {
   ========================================
 */
 
-
 .content {
 	padding-top: 10.5em;
+	overflow-y: hidden;
 	.gif {
 		background-color: $dkgrey;
 		.gif-bomb {
@@ -133,6 +134,7 @@ header {
 			margin: 0 0 0 10px;
 		}
 	}
+// WHAT
 	.what {
 		padding: 10%;
 		width: 100%;
@@ -156,6 +158,7 @@ header {
 			}
 		}
 	}
+// HOW
 	.how {
 		padding: 10%;
 		width: 100%;
@@ -164,17 +167,20 @@ header {
 		.big-how {
 			color: $white;
 		}
-		.step {
-			margin-bottom: 1em;
+		.all-steps {
+			margin: 0 auto;
+			.step {
+				margin-bottom: 1em;
+				width: 300px;
+				margin: 0 auto;
+				display: block;
 				.step-image {
-					width: 100%;
 					border-radius: 25px;
-					margin: 0 auto;
-					display: block;
 				}
-			
+			}
 		}	
 	}
+// ORDER
 	.order {
 		position: relative;
 		width: 100%;
@@ -183,7 +189,7 @@ header {
 			color: $teal;
 			padding: 10% 0 0 10%;
 		}
-		.bomb-type {
+		.bomb-type1 {
 			h3 {
 			text-align: center;
 			margin: 0 auto;
@@ -206,16 +212,13 @@ header {
 				width: 100%;
 				max-width: 450px;
 			}
-			.bomb-options-2 {
-				visibility: hidden;
-				position: absolute;
-			}
-			.bomb-desc {
-				visibility: hidden;
-				position: absolute;
-			}
+		}	
+		.bomb-type2 {
+			visibility: hidden;
+			position: absolute;
 		}
 	}
+// TRACK
 	.track {
 		padding: 10%;
 		width: 100%;
