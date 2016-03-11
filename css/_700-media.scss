@@ -37,6 +37,7 @@ p {
 .content {
 	.gif {
 		.gif-bomb {
+			margin-top: 0;
 		}
 		p {
 		}
@@ -47,14 +48,14 @@ p {
 		.copy {
 			position: relative;
 		}
-		.big-what {
-			@include font(8);
+		h2 {
+			@include font(12.5);
 			color: rgba(247,231,208,.5);
 			transform: rotate(-90deg);
 			transform-origin: left top 0;
 			position: absolute;
-			top: 5em;
-			left: .5em;
+			top: 3em;
+			left: .25em;
 			z-index: 10;
 		}
 		.animated-drone {
@@ -81,21 +82,24 @@ p {
 // HOW
 	.how {
 		padding: 5%;
-		.big-how {
-			@include font(7);
-			color: rgba(247,231,208,.5);
+		z-index: 85;
+		h2 {
+			@include font(12);
+			color: rgba(249,165,64,.5);
 			position: absolute;	
-			left: -.2em;
-			top: .63em;		
+			left: -.1em;
+			top: .3em;
+			z-index: 10;
 		}
-		.all-steps {
+		ul {
+			margin: 3.5em auto;
 			position: relative;
 			z-index: 90;
-			.step {
-				margin: 2%;
-				width: 46%;
+			li {
+				margin: 0 1%;
+				width: 44%;
 				float: left;
-					.step-image {
+					img {
 					}
 			}
 		}	
@@ -103,50 +107,55 @@ p {
 // ORDER
 	.order {
 		padding: 0 5%;
-		.big-order {
-			@include font(5);
+		h2 {
+			@include font(12);
 			color: rgba(195,43,55,.3);
 			position: absolute;
 			right: -10px;
+			top: 0;
 		}
-		.bomb-type1 {
+		.bomb-container-1 {
 			display: none;
-		}
-		.bomb-type2 {
+		}		
+		.bomb-container-2 {
 			visibility: visible;
 			position: relative;
-			width: 30%;
-			float: left;
-			margin: 40px 0;
-			.bomb-options-2 {
-				width: 100%;
-				margin: 0 10%;
-				background-color: red;
+			padding: 4em 0;
+			.bomb-type-2 {
+				width: 30%;
+				max-width: 200px;
+				display: inline-block;
+				margin: 0 auto;
+				.bomb-desc {
+					visibility: hidden;
+					position: absolute;
+				}
+			}
+			.party {
 			}
 			.flower {
-				background-color: blue;
-			}
-			.bomb-desc {
-				visibility: hidden;
-				position: absolute;
+				margin: 0 5%;
 			}
 		}
 	}
-// TRACK
+// TRACK	
 	.track {
-		.big-track {
-			@include font(6);
+		z-index: 85;
+		h2 {
+			@include font(12);
 			color: rgba(247,231,208,.3);
 			transform: rotate(-90deg);
 			transform-origin: left top 0;
 			position: absolute;
-			top: 5em;
-			left: .5em;
+			top: 2.5em;
+			left: .25em;
 			z-index: 10;
 		}
 		.order-number {
 			padding: 15px;
 			position: relative;
+			z-index: 95;
+			text-align: center;
 			li {
 			}
 			.search {
@@ -162,6 +171,7 @@ p {
   Footer
   ========================================
 */
+
 
 @import 'max-media';
 
