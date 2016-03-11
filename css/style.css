@@ -383,21 +383,6 @@ footer {
     background-color: #333333; }
     .content .gif .gif-bomb {
       width: 100%; }
-  .content .confetti {
-    width: 10px;
-    height: 10px;
-    -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;
-    border-radius: 30px;
-    position: relative;
-    background-color: #F98A10;
-    animation: confetti 6s;
-    -webkit-animation: confetti 10s;
-    animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    /* Safari and Chrome */ }
   .content .what {
     padding: 10%;
     z-index: 85; }
