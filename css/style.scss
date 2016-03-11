@@ -143,7 +143,7 @@ header {
 		.copy {
 			z-index: 95;
 		}
-		.big-what {
+		h2 {
 			color: $pink;
 			z-index: 90;
 		}
@@ -164,17 +164,15 @@ header {
 		width: 100%;
 		background-color: $pink;
 		position: relative;
-		.big-how {
+		h2 {
 			color: $white;
 		}
-		.all-steps {
-			margin: 0 auto;
-			.step {
-				margin-bottom: 1em;
+		ul {
+			padding: 1em 0;
+			li {
 				width: 300px;
 				margin: 0 auto;
-				display: block;
-				.step-image {
+				img {
 					border-radius: 25px;
 				}
 			}
@@ -185,35 +183,38 @@ header {
 		position: relative;
 		width: 100%;
 		background-color: $white;
-		.big-order {
+		h2 {
 			color: $teal;
 			padding: 10% 0 0 10%;
 		}
-		.bomb-type1 {
-			h3 {
-			text-align: center;
-			margin: 0 auto;
-			position: relative;
-			top: 5.8em;
-			background-color: rgba(255,255,255,.6);
-			padding: 4px;
-			max-width: 450px;
-				a {
-					text-decoration: none;
-					color: $dkgrey;
-					&:hover {
-						color: $pink;
-					}
-				}
-			}	
-			.bomb-options {
-				display: block;
+		.bomb-container-1 {
+			padding-bottom: 3em;
+			.bomb-type-1 {
+				h3 {
+				text-align: center;
 				margin: 0 auto;
-				width: 100%;
+				position: relative;
+				top: 5.8em;
+				background-color: rgba(255,255,255,.6);
+				padding: 4px;
 				max-width: 450px;
+					a {
+						text-decoration: none;
+						color: $dkgrey;
+						&:hover {
+							color: $pink;
+						}
+					}
+				}	
+				img {
+					display: block;
+					margin: 0 auto;
+					width: 100%;
+					max-width: 450px;
+				}
 			}
-		}	
-		.bomb-type2 {
+		}		
+		.bomb-container-2 {
 			visibility: hidden;
 			position: absolute;
 		}
@@ -224,7 +225,7 @@ header {
 		width: 100%;
 		background-color: $teal;
 		position: relative;
-		.big-track {
+		h2 {
 			color: $white;
 		}
 		.order-number {
