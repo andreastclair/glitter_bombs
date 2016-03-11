@@ -277,8 +277,9 @@ header {
       display: flex;
       flex-direction: column; }
       .content .how .how-steps img {
-        width: 300px;
-        margin: 0 auto; }
+        border-radius: 25px;
+        width: 100%;
+        margin: 10px auto; }
   .content .order {
     position: relative;
     width: 100%;
@@ -349,11 +350,6 @@ footer {
 @media screen and (min-width: 500px) {
   /*
     ========================================
-    Grid
-    ========================================
-  */
-  /*
-    ========================================
     Type
     ========================================
   */
@@ -364,11 +360,6 @@ footer {
     max-width: 75%;
     margin: 0 auto; }
 
-  /*
-    ========================================
-    Header
-    ========================================
-  */
   /*
     ========================================
     Content
@@ -408,7 +399,7 @@ footer {
         display: block;
         margin: 0 auto; }
   .content .how {
-    padding: 10% 5%;
+    padding: 6em 2.2em;
     z-index: 85; }
     .content .how h2 {
       font-size: 192px;
@@ -421,11 +412,9 @@ footer {
     .content .how .how-steps {
       position: relative;
       z-index: 90;
-      display: flex;
       flex-direction: row;
       justify-content: center; }
       .content .how .how-steps img {
-        border-radius: 25px;
         width: 45%;
         max-width: 300px;
         margin: -20px auto; }
@@ -453,8 +442,6 @@ footer {
         .content .order .bomb-container-2 .bomb-type-2 .bomb-desc {
           visibility: hidden;
           position: absolute; }
-      .content .order .bomb-container-2 .flower {
-        margin: 0 5%; }
   .content .track {
     z-index: 85; }
     .content .track h2 {
@@ -481,130 +468,40 @@ footer {
 @media screen and (min-width: 500px) and (min-width: 700px) {
   /*
     ========================================
-    Grid
-    ========================================
-  */
-  /*
-    ========================================
-    Type
-    ========================================
-  */
-  h2 {
-    line-height: 0em; }
-
-  p {
-    max-width: 75%;
-    margin: 0 auto; }
-
-  /*
-    ========================================
-    Header
-    ========================================
-  */
-  /*
-    ========================================
     Content
     ========================================
   */
-  .content .gif .gif-bomb {
-    margin-top: 0; }
-  .content .what {
-    z-index: 85; }
-    .content .what .copy {
-      position: relative; }
-    .content .what h2 {
-      font-size: 200px;
-      font-size: 12.5em;
-      color: rgba(247, 231, 208, 0.5);
-      transform: rotate(-90deg);
-      transform-origin: left top 0;
-      position: absolute;
-      top: 3em;
-      left: .25em;
-      z-index: 10; }
-    .content .what .animated-drone {
-      width: 70%;
-      margin: 0 auto; }
-      .content .what .animated-drone .drone {
-        visibility: visible;
-        position: relative;
-        width: 100%;
-        max-width: 300px;
-        display: block;
-        margin: 20px auto 0 auto;
-        z-index: 95; }
-      .content .what .animated-drone .shadow {
-        visibility: visible;
-        position: relative;
-        max-width: 150px;
-        display: block;
-        margin: 0 auto; }
-  .content .how {
-    padding: 5%;
-    z-index: 85; }
-    .content .how h2 {
-      font-size: 192px;
-      font-size: 12em;
-      color: rgba(249, 165, 64, 0.5);
-      position: absolute;
-      left: -.1em;
-      top: .3em;
-      z-index: 10; }
-    .content .how ul {
-      margin: 3.5em auto;
-      position: relative;
-      z-index: 90; }
-      .content .how ul li {
-        margin: 0 1%;
-        width: 44%;
-        float: left; }
-  .content .order {
-    padding: 0 5%; }
-    .content .order h2 {
-      font-size: 192px;
-      font-size: 12em;
-      color: rgba(195, 43, 55, 0.3);
-      position: absolute;
-      right: -10px;
-      top: 0; }
-    .content .order .bomb-container-1 {
-      display: none; }
-    .content .order .bomb-container-2 {
-      visibility: visible;
-      position: relative;
-      padding: 4em 0; }
-      .content .order .bomb-container-2 .bomb-type-2 {
-        width: 30%;
-        max-width: 200px;
-        display: inline-block;
-        margin: 0 auto; }
-        .content .order .bomb-container-2 .bomb-type-2 .bomb-desc {
-          visibility: hidden;
-          position: absolute; }
-      .content .order .bomb-container-2 .flower {
-        margin: 0 5%; }
-  .content .track {
-    z-index: 85; }
-    .content .track h2 {
-      font-size: 192px;
-      font-size: 12em;
-      color: rgba(247, 231, 208, 0.3);
-      transform: rotate(-90deg);
-      transform-origin: left top 0;
-      position: absolute;
-      top: 2.5em;
-      left: .25em;
-      z-index: 10; }
-    .content .track .order-number {
-      padding: 15px;
-      position: relative;
-      z-index: 95;
-      text-align: center; }
+  .content .how .how-steps img {
+    width: 45%;
+    margin: 0 auto; }
+  .content .order h2 {
+    top: -.05em; }
+  .content .order .bomb-container-2 .bomb-type-2 .bomb-desc {
+    visibility: visible;
+    position: relative; }
+    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc span {
+      color: #333333;
+      font-size: 1.1em; }
 
   /*
     ========================================
     Footer
     ========================================
-  */ }
+  */
+  footer {
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    footer .extra p {
+      color: #f7e7d0;
+      text-align: left; }
+    footer .social .icon {
+      width: 40px;
+      margin: 5px; }
+    footer .contact p {
+      color: #f7e7d0;
+      text-align: left; } }
 
 /*# sourceMappingURL=style.css.map */

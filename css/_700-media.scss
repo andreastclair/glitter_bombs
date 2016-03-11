@@ -1,32 +1,5 @@
 @media screen and (min-width: 700px) {
 
-/*
-  ========================================
-  Grid
-  ========================================
-*/
-
-
-/*
-  ========================================
-  Type
-  ========================================
-*/
-
-h2 {
-	line-height: 0em;
-}	
-
-p {
-	max-width: 75%;
-	margin: 0 auto;
-}
-
-/*
-  ========================================
-  Header
-  ========================================
-*/
 
 /*
   ========================================
@@ -35,135 +8,38 @@ p {
 */
 
 .content {
-	.gif {
-		.gif-bomb {
-			margin-top: 0;
-		}
-		p {
-		}
-	}
 // WHAT
-	.what {
-		z-index: 85;
-		.copy {
-			position: relative;
-		}
-		h2 {
-			@include font(12.5);
-			color: rgba(247,231,208,.5);
-			transform: rotate(-90deg);
-			transform-origin: left top 0;
-			position: absolute;
-			top: 3em;
-			left: .25em;
-			z-index: 10;
-		}
-		.animated-drone {
-			width: 70%;
-			margin: 0 auto;
-			.drone {
-				visibility: visible;
-				position: relative;
-				width: 100%;
-				max-width: 300px;
-				display: block;
-				margin: 20px auto 0 auto;
-				z-index: 95;
-			}
-			.shadow {
-				visibility: visible;
-				position: relative;
-				max-width: 150px;
-				display: block;
+
+// HOW
+	.how {
+		.how-steps {
+			img {
+				width: 45%;
+				// max-width: 350px;
 				margin: 0 auto;
 			}
 		}
-	}
-// HOW
-	.how {
-		padding: 5%;
-		z-index: 85;
-		h2 {
-			@include font(12);
-			color: rgba(249,165,64,.5);
-			position: absolute;	
-			left: -.1em;
-			top: .3em;
-			z-index: 10;
-		}
-		ul {
-			margin: 3.5em auto;
-			position: relative;
-			z-index: 90;
-			li {
-				margin: 0 1%;
-				width: 44%;
-				float: left;
-					img {
-					}
-			}
-		}	
 	}
 // ORDER
 	.order {
-		padding: 0 5%;
 		h2 {
-			@include font(12);
-			color: rgba(195,43,55,.3);
-			position: absolute;
-			right: -10px;
-			top: 0;
-		}
-		.bomb-container-1 {
-			display: none;
+			top: -.05em;
 		}		
 		.bomb-container-2 {
-			visibility: visible;
-			position: relative;
-			padding: 4em 0;
 			.bomb-type-2 {
-				width: 30%;
-				max-width: 200px;
-				display: inline-block;
-				margin: 0 auto;
 				.bomb-desc {
-					visibility: hidden;
-					position: absolute;
+					visibility: visible;
+					position: relative;
+					span {
+						color: $dkgrey;
+						font-size: 1.1em;
+					}
 				}
-			}
-			.party {
-			}
-			.flower {
-				margin: 0 5%;
 			}
 		}
 	}
 // TRACK	
-	.track {
-		z-index: 85;
-		h2 {
-			@include font(12);
-			color: rgba(247,231,208,.3);
-			transform: rotate(-90deg);
-			transform-origin: left top 0;
-			position: absolute;
-			top: 2.5em;
-			left: .25em;
-			z-index: 10;
-		}
-		.order-number {
-			padding: 15px;
-			position: relative;
-			z-index: 95;
-			text-align: center;
-			li {
-			}
-			.search {
-			}
-		}
-		iframe {
-		}
-	}
+
 }
 
 /*
@@ -172,7 +48,33 @@ p {
   ========================================
 */
 
+footer {
+	width: 100%;
+	background-color: $dkgrey;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	.extra {
+		p {
+			color: $white;
+			text-align: left;
+		}
+	}
+	.social {
+		.icon {
+			width: 40px;
+			margin: 5px;
+		}
+	}
+	.contact {
+		p {
+			color: $white;
+			text-align: left;
+		}
+	}
+}
 
 @import 'max-media';
+
 
 }

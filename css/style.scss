@@ -172,8 +172,9 @@ header {
 			display: flex;
 			flex-direction: column;
 			img {
-				width: 300px;
-				margin: 0 auto;
+				border-radius: 25px;
+				width: 100%;
+				margin: 10px auto;
 			}
 		}
 	}
