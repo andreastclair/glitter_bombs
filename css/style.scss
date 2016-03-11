@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'colors';
+@import 'animate';
 
 @mixin font($em){
 	font-size: ($em*16) + px;
@@ -96,7 +97,7 @@ header {
 	z-index: 100;
 	.logo {
 		margin: 0 auto;
-		width: 200px;
+		width: 250px;
 		display: block;
 	}
 	nav {
@@ -119,8 +120,19 @@ header {
   ========================================
 */
 
+
 .content {
-	padding-top: 8em;
+	padding-top: 10.5em;
+	.gif {
+		background-color: $dkgrey;
+		.gif-bomb {
+			margin-top: 1.8em;
+			width: 100%;
+		}
+		p {
+			margin: 0 0 0 10px;
+		}
+	}
 	.what {
 		padding: 10%;
 		width: 100%;
@@ -133,9 +145,15 @@ header {
 			color: $pink;
 			z-index: 90;
 		}
-		.drone {
-			visibility: hidden;
-			position: absolute;
+		.animated-drone {
+			.drone {
+				visibility: hidden;
+				position: absolute;
+			}
+			.shadow {
+				visibility: hidden;
+				position: absolute;
+			}
 		}
 	}
 	.how {

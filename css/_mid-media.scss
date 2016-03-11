@@ -68,6 +68,27 @@ p {
 
 .content {
 	// padding-top: 8em;
+	.gif {
+		background-color: $dkgrey;
+		.gif-bomb {
+			width: 100%;
+		}
+	}
+	.confetti {
+		width: 10px;
+		height: 10px;
+		-moz-border-radius: 30px;
+		-webkit-border-radius: 30px;
+		border-radius: 30px;
+		position:relative;
+		background-color: $dkorange;
+		animation:confetti 6s;
+		-webkit-animation:confetti 10s;
+		animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite;
+		-o-animation-iteration-count: infinite; /* Safari and Chrome */
+		}
 	.what {
 		padding: 10%;
 		z-index: 85;
@@ -85,14 +106,25 @@ p {
 			left: .5em;
 			z-index: 10;
 		}
-		.drone {
-			visibility: visible;
-			position: relative;
-			width: 90%;
-			max-width: 300px;
-			display: block;
-			margin: 20px auto 0 auto;
-			z-index: 95;
+		.animated-drone {
+			width: 70%;
+			margin: 0 auto;
+			.drone {
+				visibility: visible;
+				position: relative;
+				width: 100%;
+				max-width: 300px;
+				display: block;
+				margin: 20px auto 0 auto;
+				z-index: 95;
+			}
+			.shadow {
+				visibility: visible;
+				position: relative;
+				max-width: 150px;
+				display: block;
+				margin: 0 auto;
+			}
 		}
 	}
 	.how {
