@@ -1,26 +1,76 @@
 @media screen and (min-width: 900px) {
 
-	/*
+/*
+  ========================================
+  Header
+  ========================================
+*/
+	
+header {
+	width: 100%;
+	background-color: $teal;
+	position: fixed;
+	z-index: 100;
+	// border-bottom: 5px solid $white;
+	.logo {
+		margin: 0 auto;
+		width: 300px;
+		display: block;
+	}
+	nav {
+		text-align: right;
+		padding: 10px 20px;
+		margin-top: -7em;
+		li {
+			display: inline;
+			margin: 0 1.1em;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+/*
   ========================================
   Content
   ========================================
 */
 
 .content {
+	padding-top: 8em;
+	.gif {
+		.gif-bomb {
+			max-width: 900px;
+			display: block;
+			margin: 0 auto;
+		}
+	}
 // WHAT
+	.what {
+		padding: 5% 8%;
+		h2 {
+			top: 2.52em;
+			@include font(15);
+		}
+	}
 
 // HOW
 	.how {
+		h2 {
+			@include font(15.2);
+		}
 		.how-steps {
 			img {
-				max-width: 450px;
+				max-width: 430px;
 			}
 		}
 	}
 // ORDER
 	.order {
 		h2 {
-			top: -.1em;
+			@include font(16);
+			top: -.2em;
 		}		
 		.bomb-container-2 {
 			.bomb-type-2 {
@@ -54,7 +104,7 @@
 	.track {
 		z-index: 85;
 		h2 {
-			@include font(12);
+			@include font(16);
 			color: rgba(247,231,208,.3);
 			transform: rotate(-90deg);
 			transform-origin: left top 0;
@@ -64,16 +114,18 @@
 			z-index: 10;
 		}
 		.order-number {
-			width: 90%;
+			width: 20%;
 			padding: 15px;
 			position: relative;
 			z-index: 95;
 			text-align: center;
+			float: left;
+			height: 15em;
 		}
 		iframe {
-			width: 90%;
+			width: 75%;
 			display: block;
-			margin: 10px auto;
+			margin: 0 auto;
 		}
 	}
 

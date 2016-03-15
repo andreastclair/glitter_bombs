@@ -14,7 +14,7 @@
 	.how {
 		.how-steps {
 			img {
-				max-width: 450px;
+				max-width: 400px;
 			}
 		}
 	}
@@ -36,8 +36,9 @@
 					button {
 						padding: 5px;
 						width: 80%;
+						display: block;
 						border-radius: 25px;
-						margin-top: 20px;
+						margin: 20px auto 0 auto;
 						background-color: $ltgrey;
 						color: $dkgrey;	
 						border: 2px solid $teal;
@@ -45,6 +46,7 @@
 						&:hover {
 							background-color: $teal;
 							color: $white;
+							text-decoration: none;
 						}
 					}
 				}
@@ -91,7 +93,7 @@ footer {
 	background-color: $dkgrey;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	.extra {
 		p {
 			color: $white;

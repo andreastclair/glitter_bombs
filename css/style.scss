@@ -97,15 +97,14 @@ header {
 	background-color: $teal;
 	position: fixed;
 	z-index: 100;
-	border-bottom: 5px solid $white;
+	// border-bottom: 5px solid $white;
 	.logo {
 		margin: 0 auto;
-		width: 250px;
+		width: 300px;
 		display: block;
 	}
 	nav {
 		text-align: center;
-		// height: 5em;
 		padding: 10px 20px;
 		li {
 			display: inline;
@@ -124,7 +123,7 @@ header {
 */
 
 .content {
-	padding-top: 10em;
+	padding-top: 11em;
 	overflow: hidden;
 	.gif {
 		background-color: $dkgrey;
@@ -178,6 +177,10 @@ header {
 				width: 100%;
 				margin: 10px auto;
 			}
+		}
+		.teal-line {
+			visibility: hidden;
+			position: absolute;
 		}
 	}
 // ORDER
@@ -243,6 +246,7 @@ header {
 			max-width: 90%;
 			display: block;
 			margin: 10px auto;
+			z-index: 95;
 		}
 	}
 }
@@ -257,7 +261,7 @@ footer {
 	width: 100%;
 	background-color: $dkgrey;
 	text-align: center;
-	padding: 5%;
+	padding: 1em;
 	.extra {
 		p {
 			color: $white;

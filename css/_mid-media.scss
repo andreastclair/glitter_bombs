@@ -35,12 +35,12 @@ p {
 			position: relative;
 		}
 		h2 {
-			@include font(12.5);
+			@include font(13);
 			color: rgba(247,231,208,.5);
 			transform: rotate(-90deg);
 			transform-origin: left top 0;
 			position: absolute;
-			top: 3em;
+			top: 2.7em;
 			left: .25em;
 			z-index: 10;
 		}
@@ -109,7 +109,7 @@ p {
 			justify-content: row;
 			.bomb-type-2 {
 				width: 30%;
-				max-width: 200px;
+				max-width: 250px;
 				margin: 0 auto;
 				.bomb-desc {
 					visibility: hidden;
