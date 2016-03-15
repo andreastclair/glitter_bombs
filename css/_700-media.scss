@@ -14,31 +14,69 @@
 	.how {
 		.how-steps {
 			img {
-				width: 45%;
-				// max-width: 350px;
-				margin: 0 auto;
+				max-width: 450px;
 			}
 		}
 	}
 // ORDER
 	.order {
 		h2 {
-			top: -.05em;
+			top: -.1em;
 		}		
 		.bomb-container-2 {
 			.bomb-type-2 {
 				.bomb-desc {
 					visibility: visible;
 					position: relative;
+					margin-top: 1em;
 					span {
 						color: $dkgrey;
 						font-size: 1.1em;
+					}
+					button {
+						padding: 5px;
+						width: 80%;
+						border-radius: 25px;
+						margin-top: 20px;
+						background-color: $ltgrey;
+						color: $dkgrey;	
+						border: 2px solid $teal;
+						font-family: "museo-sans",sans-serif;
+						&:hover {
+							background-color: $teal;
+							color: $white;
+						}
 					}
 				}
 			}
 		}
 	}
-// TRACK	
+// TRACK
+	.track {
+		z-index: 85;
+		h2 {
+			@include font(12);
+			color: rgba(247,231,208,.3);
+			transform: rotate(-90deg);
+			transform-origin: left top 0;
+			position: absolute;
+			top: 2.5em;
+			left: .25em;
+			z-index: 10;
+		}
+		.order-number {
+			width: 90%;
+			padding: 15px;
+			position: relative;
+			z-index: 95;
+			text-align: center;
+		}
+		iframe {
+			width: 90%;
+			display: block;
+			margin: 10px auto;
+		}
+	}
 
 }
 

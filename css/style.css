@@ -221,7 +221,8 @@ header {
   width: 100%;
   background-color: #12847e;
   position: fixed;
-  z-index: 100; }
+  z-index: 100;
+  border-bottom: 5px solid #f7e7d0; }
   header .logo {
     margin: 0 auto;
     width: 250px;
@@ -241,12 +242,11 @@ header {
   ========================================
 */
 .content {
-  padding-top: 10.5em;
+  padding-top: 10em;
   overflow: hidden; }
   .content .gif {
     background-color: #333333; }
     .content .gif .gif-bomb {
-      margin-top: 1.8em;
       width: 100%; }
     .content .gif p {
       margin: 0 0 0 10px; }
@@ -274,10 +274,12 @@ header {
     .content .how h2 {
       color: #f7e7d0; }
     .content .how .how-steps {
+      position: relative;
+      z-index: 90;
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column; }
       .content .how .how-steps img {
-        border-radius: 25px;
         width: 100%;
         margin: 10px auto; }
   .content .order {
@@ -338,7 +340,7 @@ footer {
   width: 100%;
   background-color: #333333;
   text-align: center;
-  padding: 15px; }
+  padding: 5%; }
   footer .extra p {
     color: #f7e7d0; }
   footer .social .icon {
@@ -410,14 +412,12 @@ footer {
       top: .3em;
       z-index: 10; }
     .content .how .how-steps {
-      position: relative;
-      z-index: 90;
       flex-direction: row;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
       .content .how .how-steps img {
-        width: 45%;
-        max-width: 300px;
-        margin: -20px auto; }
+        width: 48%;
+        margin: 1%; }
   .content .order {
     padding: 0 5%; }
     .content .order h2 {
@@ -426,7 +426,7 @@ footer {
       color: rgba(195, 43, 55, 0.3);
       position: absolute;
       right: -10px;
-      top: 0; }
+      top: -.05em; }
     .content .order .bomb-container-1 {
       display: none; }
     .content .order .bomb-container-2 {
@@ -472,16 +472,50 @@ footer {
     ========================================
   */
   .content .how .how-steps img {
-    width: 45%;
-    margin: 0 auto; }
+    max-width: 450px; }
   .content .order h2 {
-    top: -.05em; }
+    top: -.1em; }
   .content .order .bomb-container-2 .bomb-type-2 .bomb-desc {
     visibility: visible;
-    position: relative; }
+    position: relative;
+    margin-top: 1em; }
     .content .order .bomb-container-2 .bomb-type-2 .bomb-desc span {
       color: #333333;
       font-size: 1.1em; }
+    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button {
+      padding: 5px;
+      width: 80%;
+      border-radius: 25px;
+      margin-top: 20px;
+      background-color: #F2F1F0;
+      color: #333333;
+      border: 2px solid #12847e;
+      font-family: "museo-sans",sans-serif; }
+      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button:hover {
+        background-color: #12847e;
+        color: #f7e7d0; }
+  .content .track {
+    z-index: 85; }
+    .content .track h2 {
+      font-size: 192px;
+      font-size: 12em;
+      color: rgba(247, 231, 208, 0.3);
+      transform: rotate(-90deg);
+      transform-origin: left top 0;
+      position: absolute;
+      top: 2.5em;
+      left: .25em;
+      z-index: 10; }
+    .content .track .order-number {
+      width: 90%;
+      padding: 15px;
+      position: relative;
+      z-index: 95;
+      text-align: center; }
+    .content .track iframe {
+      width: 90%;
+      display: block;
+      margin: 10px auto; }
 
   /*
     ========================================
@@ -494,6 +528,222 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
+    footer .extra p {
+      color: #f7e7d0;
+      text-align: left; }
+    footer .social .icon {
+      width: 40px;
+      margin: 5px; }
+    footer .contact p {
+      color: #f7e7d0;
+      text-align: left; } }
+@media screen and (min-width: 500px) and (min-width: 700px) and (min-width: 900px) {
+  	/*
+    ========================================
+    Content
+    ========================================
+  */
+  .content .how .how-steps img {
+    max-width: 450px; }
+  .content .order h2 {
+    top: -.1em; }
+  .content .order .bomb-container-2 .bomb-type-2 .bomb-desc {
+    visibility: visible;
+    position: relative;
+    margin-top: 1em; }
+    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc span {
+      color: #333333;
+      font-size: 1.1em; }
+    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button {
+      padding: 5px;
+      width: 80%;
+      border-radius: 25px;
+      margin-top: 20px;
+      background-color: #F2F1F0;
+      color: #333333;
+      border: 2px solid #12847e;
+      font-family: "museo-sans",sans-serif; }
+      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button:hover {
+        background-color: #12847e;
+        color: #f7e7d0; }
+  .content .track {
+    z-index: 85; }
+    .content .track h2 {
+      font-size: 192px;
+      font-size: 12em;
+      color: rgba(247, 231, 208, 0.3);
+      transform: rotate(-90deg);
+      transform-origin: left top 0;
+      position: absolute;
+      top: 2.5em;
+      left: .25em;
+      z-index: 10; }
+    .content .track .order-number {
+      width: 90%;
+      padding: 15px;
+      position: relative;
+      z-index: 95;
+      text-align: center; }
+    .content .track iframe {
+      width: 90%;
+      display: block;
+      margin: 10px auto; }
+
+  /*
+    ========================================
+    Footer
+    ========================================
+  */
+  footer {
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    footer .extra p {
+      color: #f7e7d0;
+      text-align: left; }
+    footer .social .icon {
+      width: 40px;
+      margin: 5px; }
+    footer .contact p {
+      color: #f7e7d0;
+      text-align: left; } }
+@media screen and (min-width: 500px) and (min-width: 900px) {
+  	/*
+    ========================================
+    Content
+    ========================================
+  */
+  .content .how .how-steps img {
+    max-width: 450px; }
+  .content .order h2 {
+    top: -.1em; }
+  .content .order .bomb-container-2 .bomb-type-2 .bomb-desc {
+    visibility: visible;
+    position: relative;
+    margin-top: 1em; }
+    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc span {
+      color: #333333;
+      font-size: 1.1em; }
+    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button {
+      padding: 5px;
+      width: 80%;
+      border-radius: 25px;
+      margin-top: 20px;
+      background-color: #F2F1F0;
+      color: #333333;
+      border: 2px solid #12847e;
+      font-family: "museo-sans",sans-serif; }
+      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button:hover {
+        background-color: #12847e;
+        color: #f7e7d0; }
+  .content .track {
+    z-index: 85; }
+    .content .track h2 {
+      font-size: 192px;
+      font-size: 12em;
+      color: rgba(247, 231, 208, 0.3);
+      transform: rotate(-90deg);
+      transform-origin: left top 0;
+      position: absolute;
+      top: 2.5em;
+      left: .25em;
+      z-index: 10; }
+    .content .track .order-number {
+      width: 90%;
+      padding: 15px;
+      position: relative;
+      z-index: 95;
+      text-align: center; }
+    .content .track iframe {
+      width: 90%;
+      display: block;
+      margin: 10px auto; }
+
+  /*
+    ========================================
+    Footer
+    ========================================
+  */
+  footer {
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    footer .extra p {
+      color: #f7e7d0;
+      text-align: left; }
+    footer .social .icon {
+      width: 40px;
+      margin: 5px; }
+    footer .contact p {
+      color: #f7e7d0;
+      text-align: left; } }
+@media screen and (min-width: 900px) {
+  	/*
+    ========================================
+    Content
+    ========================================
+  */
+  .content .how .how-steps img {
+    max-width: 450px; }
+  .content .order h2 {
+    top: -.1em; }
+  .content .order .bomb-container-2 .bomb-type-2 .bomb-desc {
+    visibility: visible;
+    position: relative;
+    margin-top: 1em; }
+    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc span {
+      color: #333333;
+      font-size: 1.1em; }
+    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button {
+      padding: 5px;
+      width: 80%;
+      border-radius: 25px;
+      margin-top: 20px;
+      background-color: #F2F1F0;
+      color: #333333;
+      border: 2px solid #12847e;
+      font-family: "museo-sans",sans-serif; }
+      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button:hover {
+        background-color: #12847e;
+        color: #f7e7d0; }
+  .content .track {
+    z-index: 85; }
+    .content .track h2 {
+      font-size: 192px;
+      font-size: 12em;
+      color: rgba(247, 231, 208, 0.3);
+      transform: rotate(-90deg);
+      transform-origin: left top 0;
+      position: absolute;
+      top: 2.5em;
+      left: .25em;
+      z-index: 10; }
+    .content .track .order-number {
+      width: 90%;
+      padding: 15px;
+      position: relative;
+      z-index: 95;
+      text-align: center; }
+    .content .track iframe {
+      width: 90%;
+      display: block;
+      margin: 10px auto; }
+
+  /*
+    ========================================
+    Footer
+    ========================================
+  */
+  footer {
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
     footer .extra p {
       color: #f7e7d0;
       text-align: left; }

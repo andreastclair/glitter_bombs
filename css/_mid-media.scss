@@ -78,14 +78,13 @@ p {
 			z-index: 10;
 		}
 		.how-steps {
-			position: relative;
-			z-index: 90;
 			flex-direction: row;
 			justify-content: center;
+			align-items: center;
 			img {
-				width: 45%;
-				max-width: 300px;
-				margin: -20px auto;
+				width: 48%;
+				// max-width: 300px;
+				margin: 1%;
 			}
 		}
 	}
@@ -97,7 +96,7 @@ p {
 			color: rgba(195,43,55,.3);
 			position: absolute;
 			right: -10px;
-			top: 0;
+			top: -.05em;
 		}
 		.bomb-container-1 {
 			display: none;

@@ -97,6 +97,7 @@ header {
 	background-color: $teal;
 	position: fixed;
 	z-index: 100;
+	border-bottom: 5px solid $white;
 	.logo {
 		margin: 0 auto;
 		width: 250px;
@@ -123,12 +124,11 @@ header {
 */
 
 .content {
-	padding-top: 10.5em;
+	padding-top: 10em;
 	overflow: hidden;
 	.gif {
 		background-color: $dkgrey;
 		.gif-bomb {
-			margin-top: 1.8em;
 			width: 100%;
 		}
 		p {
@@ -169,10 +169,12 @@ header {
 			color: $white;
 		}
 		.how-steps {
+			position: relative;
+			z-index: 90;
 			display: flex;
+			flex-wrap: wrap;
 			flex-direction: column;
 			img {
-				border-radius: 25px;
 				width: 100%;
 				margin: 10px auto;
 			}
@@ -255,7 +257,7 @@ footer {
 	width: 100%;
 	background-color: $dkgrey;
 	text-align: center;
-	padding: 15px;
+	padding: 5%;
 	.extra {
 		p {
 			color: $white;
