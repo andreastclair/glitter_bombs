@@ -231,7 +231,7 @@ header {
     padding: 10px 20px; }
     header nav li {
       display: inline;
-      margin: 0 1.1em; }
+      margin: 0 3%; }
       header nav li a {
         text-decoration: none; }
 
