@@ -235,19 +235,46 @@ header {
 		}
 		.order-number {
 			background-color: $orange;
+			border: 20px solid $dkorange;
 			margin: 0 auto;
 			padding: 7%;
 			border-radius: 25px;
+			text-align: center;
+			input {
+				width: 90%;
+				max-width: 150px;
+			}
 			.search {
 				width: 20px;
 			}
 		}
 		iframe {
-			max-width: 90%;
+			width: 100%;
 			display: block;
 			margin: 10px auto;
 			z-index: 95;
 		}
+	}
+}
+/*
+  ========================================
+  Product
+  ========================================
+*/
+.no-nav {
+		height: 4.3em;
+		position: fixed;
+}
+.product-container {
+	// background-color: red;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 10em;
+	img {
+		width: 100px;
+		margin: 20px;
+	}
+	.bomb-highlight {
 	}
 }
 
