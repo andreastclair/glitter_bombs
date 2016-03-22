@@ -348,13 +348,14 @@ header {
   height: 4.3em;
   position: fixed; }
 
-.product-container {
+.product-container .container {
   width: 90%;
   margin: 0 auto;
-  padding-top: 10em; }
-  .product-container img {
-    width: 100px;
-    margin: 20px; }
+  padding-top: 10em;
+  background-color: #f7e7d0; }
+.product-container img {
+  width: 100px;
+  margin: 20px; }
 
 /*
   ========================================

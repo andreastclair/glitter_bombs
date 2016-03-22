@@ -266,15 +266,19 @@ header {
 		position: fixed;
 }
 .product-container {
+	.container {
 	// background-color: red;
 	width: 90%;
 	margin: 0 auto;
 	padding-top: 10em;
+	background-color: $white;
+	}
 	img {
 		width: 100px;
 		margin: 20px;
 	}
 	.bomb-highlight {
+		
 	}
 }
 
