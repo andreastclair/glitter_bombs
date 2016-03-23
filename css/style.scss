@@ -67,6 +67,11 @@ h4 {
 	@include font(1.2);
 }
 
+h5 {
+	@include font(1);
+	font-weight: bold;
+}
+
 a {
 	color: $white;
 	&:hover {
@@ -256,31 +261,6 @@ header {
 		}
 	}
 }
-/*
-  ========================================
-  Product
-  ========================================
-*/
-.no-nav {
-		height: 4.3em;
-		position: fixed;
-}
-.product-container {
-	.container {
-	// background-color: red;
-	width: 90%;
-	margin: 0 auto;
-	padding-top: 10em;
-	background-color: $white;
-	}
-	img {
-		width: 100px;
-		margin: 20px;
-	}
-	.bomb-highlight {
-		
-	}
-}
 
 /*
   ========================================
@@ -310,6 +290,44 @@ footer {
 		}
 	}
 }
+
+/*
+  ========================================
+  Product
+  ========================================
+*/
+.horiz-line {
+	width: 100%;
+	border: 1px solid $dkgrey;
+	margin: 20px auto;
+}
+.no-nav {
+		height: 4.3em;
+		position: fixed;
+}
+.product-container {
+	.container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 8em;
+	background-color: $white;
+		section {
+			display: flex;
+			flex-direction: column;
+			img {
+				width: 140px;
+				margin: 20px auto;
+			}
+			.bomb-highlight {
+				margin: 20px auto;
+			}
+		}
+	}
+	
+	
+}
+
+
 
 @import 'mid-media';
 @import 'max-media';

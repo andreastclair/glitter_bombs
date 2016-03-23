@@ -198,6 +198,11 @@ h4 {
   font-size: 19.2px;
   font-size: 1.2em; }
 
+h5 {
+  font-size: 16px;
+  font-size: 1em;
+  font-weight: bold; }
+
 a {
   color: #f7e7d0; }
   a:hover {
@@ -341,24 +346,6 @@ header {
 
 /*
   ========================================
-  Product
-  ========================================
-*/
-.no-nav {
-  height: 4.3em;
-  position: fixed; }
-
-.product-container .container {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 10em;
-  background-color: #f7e7d0; }
-.product-container img {
-  width: 100px;
-  margin: 20px; }
-
-/*
-  ========================================
   Footer
   ========================================
 */
@@ -374,6 +361,34 @@ footer {
     margin: 10px; }
   footer .contact p {
     color: #f7e7d0; }
+
+/*
+  ========================================
+  Product
+  ========================================
+*/
+.horiz-line {
+  width: 100%;
+  border: 1px solid #333333;
+  margin: 20px auto; }
+
+.no-nav {
+  height: 4.3em;
+  position: fixed; }
+
+.product-container .container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 8em;
+  background-color: #f7e7d0; }
+  .product-container .container section {
+    display: flex;
+    flex-direction: column; }
+    .product-container .container section img {
+      width: 140px;
+      margin: 20px auto; }
+    .product-container .container section .bomb-highlight {
+      margin: 20px auto; }
 
 @media screen and (min-width: 500px) {
   /*
