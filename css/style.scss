@@ -293,25 +293,49 @@ footer {
 
 /*
   ========================================
-  Product
+  Product / Checkout
   ========================================
 */
+.no-nav {
+		height: 4.3em;
+		position: fixed;
+}
+.breadcrumbs {
+	color: $grey;
+	a {
+		color: $grey;
+		text-decoration: none;
+	}
+}
+.bomb-btn {
+	padding: 5px;
+	width: 150px;
+	display: block;
+	border-radius: 25px;
+	margin: 20px auto;
+	background-color: $ltgrey;
+	color: $dkgrey;	
+	border: 2px solid $teal;
+	font-family: "museo-sans",sans-serif;
+	&:hover {
+		background-color: $teal;
+		color: $white;
+		text-decoration: none;
+	}
+}
 .horiz-line {
 	width: 100%;
 	border: 1px solid $dkgrey;
 	margin: 20px auto;
 }
-.no-nav {
-		height: 4.3em;
-		position: fixed;
-}
 .product-container {
 	.container {
-	width: 90%;
-	margin: 0 auto;
-	padding-top: 8em;
-	background-color: $white;
-		section {
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 10em;
+		background-color: $white;
+	// PRODUCT
+		.product {
 			display: flex;
 			flex-direction: column;
 			img {
@@ -322,9 +346,21 @@ footer {
 				margin: 20px auto;
 			}
 		}
-	}
-	
-	
+	// CHECKOUT
+		.checkout-form {
+			// margin: 0 auto;
+			h5 {
+				line-height: 2em;
+			}
+			input {
+				padding: 5px;
+				margin-bottom: 10px;
+			}
+			select {
+				margin-bottom: 10px;
+			}
+		}
+	}	
 }
 
 
