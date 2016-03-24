@@ -372,7 +372,8 @@ footer {
   position: fixed; }
 
 .breadcrumbs {
-  color: #bdbaba; }
+  color: #bdbaba;
+  margin-bottom: 20px; }
   .breadcrumbs a {
     color: #bdbaba;
     text-decoration: none; }
@@ -532,7 +533,56 @@ footer {
     ========================================
     Footer
     ========================================
-  */ }
+  */
+  /*
+    ========================================
+    Product / Checkout
+    ========================================
+  */
+  .no-nav {
+    height: 4.3em;
+    position: fixed; }
+
+  .breadcrumbs {
+    color: #bdbaba;
+    margin-bottom: 20px; }
+    .breadcrumbs a {
+      color: #bdbaba;
+      text-decoration: none; }
+
+  .bomb-btn {
+    padding: 5px;
+    width: 150px;
+    display: block;
+    border-radius: 25px;
+    margin: 20px auto;
+    background-color: #F2F1F0;
+    color: #333333;
+    border: 2px solid #12847e;
+    font-family: "museo-sans",sans-serif; }
+    .bomb-btn:hover {
+      background-color: #12847e;
+      color: #f7e7d0;
+      text-decoration: none; }
+
+  .horiz-line {
+    width: 100%;
+    border: 1px solid #333333;
+    margin: 20px auto; }
+
+  .product-container .container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10em;
+    background-color: #f7e7d0; }
+    .product-container .container .product {
+      display: flex;
+      flex-direction: column; }
+      .product-container .container .product img {
+        width: 140px;
+        margin: 20px auto; }
+      .product-container .container .product .bomb-highlight {
+        margin: 20px auto; } }
 @media screen and (min-width: 500px) and (min-width: 700px) {
   /*
     ========================================

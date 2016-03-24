@@ -145,6 +145,65 @@ p {
   ========================================
 */
 
+/*
+  ========================================
+  Product / Checkout
+  ========================================
+*/
+.no-nav {
+		height: 4.3em;
+		position: fixed;
+}
+.breadcrumbs {
+	color: $grey;
+	margin-bottom: 20px;
+	a {
+		color: $grey;
+		text-decoration: none;
+	}
+}
+.bomb-btn {
+	padding: 5px;
+	width: 150px;
+	display: block;
+	border-radius: 25px;
+	margin: 20px auto;
+	background-color: $ltgrey;
+	color: $dkgrey;	
+	border: 2px solid $teal;
+	font-family: "museo-sans",sans-serif;
+	&:hover {
+		background-color: $teal;
+		color: $white;
+		text-decoration: none;
+	}
+}
+.horiz-line {
+	width: 100%;
+	border: 1px solid $dkgrey;
+	margin: 20px auto;
+}
+.product-container {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 10em;
+		background-color: $white;
+	// PRODUCT
+		.product {
+			display: flex;
+			flex-direction: column;
+			img {
+				width: 140px;
+				margin: 20px auto;
+			}
+			.bomb-highlight {
+				margin: 20px auto;
+			}
+		}
+	}	
+}
+
 @import '700-media';
 @import 'max-media';
 

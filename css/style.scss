@@ -302,6 +302,7 @@ footer {
 }
 .breadcrumbs {
 	color: $grey;
+	margin-bottom: 20px;
 	a {
 		color: $grey;
 		text-decoration: none;
@@ -348,7 +349,6 @@ footer {
 		}
 	// CHECKOUT
 		.checkout-form {
-			// margin: 0 auto;
 			h5 {
 				line-height: 2em;
 			}
