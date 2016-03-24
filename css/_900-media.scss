@@ -153,6 +153,11 @@ footer {
 .bomb-btn {
 	margin: 30px auto 50px auto;
 }
+.horiz-transparent {
+	width: 80%;
+	border: 0.1px solid $white;
+	margin: 5px auto;
+}
 .product-container {
 	.container {
 		padding-top: 10em;
@@ -173,24 +178,37 @@ footer {
 		// CHECKOUT
 		.checkout-form {
 			padding: 10px;
+			// background-color: red;
 			h5 {
 				line-height: 2em;
 			}
 			input {
 				padding: 5px;
-				margin-bottom: 15px;
-				width: 40%;
+				margin: 0 auto 15px auto;
+				width: 49.5%;
 				max-width: 800px;
 			}
 			.checkbox {
 				width: 20px;
 			}
+			.label-break {
+				display: block;
+			}
+			.phone-detail-inline {
+				display: inline-block;
+			}
 			select {
 				margin-bottom: 10px;
-				width: 48%;
+				width: 20%;
+			}
+			.sm-input {
+				width: 32.8%;
+			}
+			.big-input {
+				width: 79%;
 			}
 		}
-	}	
+	}
 }
 
 @import '1100-media';

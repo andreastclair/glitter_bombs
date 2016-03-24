@@ -334,6 +334,11 @@ footer {
 	border: 1px solid $dkgrey;
 	margin: 20px auto;
 }
+.horiz-transparent {
+	width: 80%;
+	border: 0.1px solid $white;
+	margin: 15px auto;
+}
 .product-container {
 	.container {
 		width: 90%;
@@ -373,7 +378,7 @@ footer {
 			}
 			select {
 				margin-bottom: 10px;
-				width: 48%;
+				width: 100%;
 			}
 		}
 	}	

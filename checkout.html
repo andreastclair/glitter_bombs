@@ -26,22 +26,32 @@
                     <h5>Victim's Info</h5>
                     <input type="text" placeholder="Full Name" />
                     <input type="text" placeholder="Bomb Destination (Park, Neighborhood, Fair, etc.)" />
-                    <label>
+
+                    <div class="horiz-transparent"></div>
+                    
+                    <label class="label-break">
                         <input class="checkbox" type="checkbox" name="yes" value="Yes" /> Yes, I have an address for my victim.
                     </label>
                     <input type="text" placeholder="Victim's Nearest Intersection - Street One" />
                     <input type="text" placeholder="Victim's Nearest Intersection - Street Two" />
-                    <label>Bomb Arrival Date & Time</label>
+                    
+                    <div class="horiz-transparent"></div>
+                    
+                    <label class="label-break">Bomb Arrival Date & Time</label>
                     <input type="date" />
                     <input type="time"/> 
+                    
+                    <div class="horiz-transparent"></div>
+                    
                     <input type="tel" placeholder="Phone Number" />
-                    <h6>We will only use their phone number minutes before the attack in order to pinpoint their location.</h6>
-                    <br>
-                    <label>
+                    <h6 class="phone-detail-inline">We will only use their phone number to pinpoint their location.</h6>
+                    
+                    <div class="horiz-transparent"></div>
+                    
+                    <label class="label-break">
                         <input class="checkbox" type="checkbox" name="yes" value="Yes" /> Yes! I want a video!
                     </label>
-                    <br>
-                    <label>
+                    <label class="label-break">
                         <input class="checkbox" type="checkbox" name="yes" value="Yes" /> Yes! Tell them it was me!
                     </label>
                 </form>
@@ -55,20 +65,22 @@
                     <input type="tel" placeholder="Phone Number" />
                     <br>
                     <input type="email" placeholder="Email Address" />
-                    <br>
-                    <label>Billing Info</label>
+
+                    <div class="horiz-transparent"></div>
+                    
+                    <label class="label-break">Billing Info</label>
                     <input type="text" placeholder="Street" />
                     <input type="text" placeholder="Apt #" />
-                    <input type="text" placeholder="City" />
-                    <input type="text" placeholder="State" />
-                    <input type="text" placeholder="Zip" />
+                    <input class="sm-input" type="text" placeholder="City" />
+                    <input class="sm-input" type="text" placeholder="State" />
+                    <input class="sm-input" type="text" placeholder="Zip" />
                     <select name="cc-type">
                         <option value="Visa" selected>Visa</option>
                         <option value="Mastercard">Mastercard</option>
                         <option value="Amex">Amex</option>
                         <option value="Discover">Discover</option>
                     </select>
-                    <input type="text" placeholder="Credit Card Number" />
+                    <input class="big-input" type="text" placeholder="Credit Card Number" />
                     <input type="number" placeholder="Exp" />
                     <input type="number" placeholder="CVV" />
                 </form>

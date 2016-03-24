@@ -403,6 +403,11 @@ footer {
   border: 1px solid #333333;
   margin: 20px auto; }
 
+.horiz-transparent {
+  width: 80%;
+  border: 0.1px solid #f7e7d0;
+  margin: 15px auto; }
+
 .product-container .container {
   width: 90%;
   margin: 0 auto;
@@ -431,7 +436,7 @@ footer {
       margin: 0; }
     .product-container .container .checkout-form select {
       margin-bottom: 10px;
-      width: 48%; }
+      width: 100%; }
 
 @media screen and (min-width: 500px) {
   /*
@@ -743,6 +748,11 @@ footer {
   .bomb-btn {
     margin: 30px auto 50px auto; }
 
+  .horiz-transparent {
+    width: 80%;
+    border: 0.1px solid #f7e7d0;
+    margin: 5px auto; }
+
   .product-container .container {
     padding-top: 10em; }
     .product-container .container .product {
@@ -760,14 +770,22 @@ footer {
         line-height: 2em; }
       .product-container .container .checkout-form input {
         padding: 5px;
-        margin-bottom: 15px;
-        width: 40%;
+        margin: 0 auto 15px auto;
+        width: 49.5%;
         max-width: 800px; }
       .product-container .container .checkout-form .checkbox {
         width: 20px; }
+      .product-container .container .checkout-form .label-break {
+        display: block; }
+      .product-container .container .checkout-form .phone-detail-inline {
+        display: inline-block; }
       .product-container .container .checkout-form select {
         margin-bottom: 10px;
-        width: 48%; } }
+        width: 20%; }
+      .product-container .container .checkout-form .sm-input {
+        width: 32.8%; }
+      .product-container .container .checkout-form .big-input {
+        width: 79%; } }
 @media screen and (min-width: 500px) and (min-width: 700px) and (min-width: 900px) and (min-width: 1100px) {
   /*
     ========================================
@@ -901,6 +919,11 @@ footer {
   .bomb-btn {
     margin: 30px auto 50px auto; }
 
+  .horiz-transparent {
+    width: 80%;
+    border: 0.1px solid #f7e7d0;
+    margin: 5px auto; }
+
   .product-container .container {
     padding-top: 10em; }
     .product-container .container .product {
@@ -918,14 +941,22 @@ footer {
         line-height: 2em; }
       .product-container .container .checkout-form input {
         padding: 5px;
-        margin-bottom: 15px;
-        width: 40%;
+        margin: 0 auto 15px auto;
+        width: 49.5%;
         max-width: 800px; }
       .product-container .container .checkout-form .checkbox {
         width: 20px; }
+      .product-container .container .checkout-form .label-break {
+        display: block; }
+      .product-container .container .checkout-form .phone-detail-inline {
+        display: inline-block; }
       .product-container .container .checkout-form select {
         margin-bottom: 10px;
-        width: 48%; } }
+        width: 20%; }
+      .product-container .container .checkout-form .sm-input {
+        width: 32.8%; }
+      .product-container .container .checkout-form .big-input {
+        width: 79%; } }
 @media screen and (min-width: 500px) and (min-width: 900px) and (min-width: 1100px) {
   /*
     ========================================
@@ -1059,6 +1090,11 @@ footer {
   .bomb-btn {
     margin: 30px auto 50px auto; }
 
+  .horiz-transparent {
+    width: 80%;
+    border: 0.1px solid #f7e7d0;
+    margin: 5px auto; }
+
   .product-container .container {
     padding-top: 10em; }
     .product-container .container .product {
@@ -1076,14 +1112,22 @@ footer {
         line-height: 2em; }
       .product-container .container .checkout-form input {
         padding: 5px;
-        margin-bottom: 15px;
-        width: 40%;
+        margin: 0 auto 15px auto;
+        width: 49.5%;
         max-width: 800px; }
       .product-container .container .checkout-form .checkbox {
         width: 20px; }
+      .product-container .container .checkout-form .label-break {
+        display: block; }
+      .product-container .container .checkout-form .phone-detail-inline {
+        display: inline-block; }
       .product-container .container .checkout-form select {
         margin-bottom: 10px;
-        width: 48%; } }
+        width: 20%; }
+      .product-container .container .checkout-form .sm-input {
+        width: 32.8%; }
+      .product-container .container .checkout-form .big-input {
+        width: 79%; } }
 @media screen and (min-width: 900px) and (min-width: 1100px) {
   /*
     ========================================
