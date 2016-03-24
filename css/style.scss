@@ -365,11 +365,9 @@ footer {
 			}
 			input {
     			box-shadow: inset 0 0 0 1px #d5d8da,inset 0 2px 2px #eff0f1,0 0 0 1000px #fff inset;
-    			// display: block;
     			width: 100%;
 				padding: 8px;
 				margin: 10px auto;
-				// max-width: 800px;
 			}
 			.checkbox {
 				width: 20px;
@@ -384,6 +382,107 @@ footer {
 	}	
 }
 
+/*
+  ========================================
+  Confirm
+  ========================================
+*/
+.confirm-container {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 10em;
+		background-color: $white;
+		body {
+  			padding: 2em;
+			background: #001;
+			color: #eee;
+			margin: 0 auto;
+			text-align: center;
+  			font: normal 100% Arial;
+		}
+		.explode {
+			text-align: left;
+			display: inline-block;
+    		position: relative;
+			padding: $explodeSize + $lineWidth;
+  			transform-origin: center center;
+    		animation: explode-rotate 20s linear infinite;
+		}
+		.frag {	
+  			position: absolute;
+  			transform-origin: $lineWidth/2 $lineHeight/2;
+			opacity: 0;
+  			&:before,
+			&:after {
+    			position: absolute;
+    			content: "";
+    			width: $lineWidth;
+    			height: $lineHeight;
+				border-radius: 40%;
+				background-color: purple;
+    			transform-origin: inherit;
+    			animation: none $speed ease infinite alternate;
+  			}
+  			&:before {	
+    			background-image: linear-gradient(to bottom, rgba(255,0,0,0.65) 0%,rgba(255,0,0,0) 100%);
+    			animation-name: explode-frag-before;
+  			}
+  			&:after {
+  				background-image: linear-gradient(to bottom, rgba(255,0,0,0) 0%,rgba(255,0,0,0.65) 100%);
+    			animation-name: explode-frag-after;
+  			}
+			&:nth-of-type(2n):before,
+			&:nth-of-type(2n):after {
+				animation-delay: $speed/4;
+				background-color: yellow;
+			}
+			&:nth-of-type(3n):before,
+			&:nth-of-type(3n):after {
+				animation-delay: $speed/6;
+				background-color: orange;
+			}
+			@for $i from 1 through $fragmentSets {
+	    		&:nth-of-type(#{$i}) {
+					opacity: 1;
+	      			transform: translate(-$lineWidth/2, -$lineHeight/2) rotate(180deg/$fragmentSets * ($i - 1));
+    			}
+			}
+		}
+		@keyframes explode-frag-before {
+			0% {
+        		transform:  translateY(-$explodeSize/10);
+				filter: blur(3px);
+			}
+			20% {
+				filter: blur(0);
+			}
+    		100% {
+        		transform:  translateY(-$explodeSize);
+    		}
+		}
+		@keyframes explode-frag-after {
+			0% {
+        		transform:  translateY($explodeSize/10);
+				filter: blur(3px);
+			}
+			20% {
+				filter: blur(0);
+			}
+    		100% {	
+        		transform:  translateY($explodeSize);
+    		}
+		}
+		@keyframes explode-rotate {
+			0% {
+        		transform:  rotate(0);
+			}
+    		100% {
+        		transform:  rotate(180deg);
+    		}
+		}
+	}
+}		
 
 
 @import '500-media';
