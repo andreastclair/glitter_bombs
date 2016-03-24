@@ -72,6 +72,11 @@ h5 {
 	font-weight: bold;
 }
 
+h6 {
+	@include font(.8);
+	line-height: 1.2em;
+}
+
 a {
 	color: $white;
 	&:hover {
@@ -354,13 +359,17 @@ footer {
 				line-height: 2em;
 			}
 			input {
-				padding: 5px;
-				margin-bottom: 15px;
-				width: 100%;
-				max-width: 800px;
+    			box-shadow: inset 0 0 0 1px #d5d8da,inset 0 2px 2px #eff0f1,0 0 0 1000px #fff inset;
+    			// display: block;
+    			width: 100%;
+				padding: 8px;
+				margin: 10px auto;
+				// max-width: 800px;
 			}
 			.checkbox {
 				width: 20px;
+				height: 20px;
+				margin: 0;
 			}
 			select {
 				margin-bottom: 10px;
