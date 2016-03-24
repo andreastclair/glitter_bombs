@@ -24,31 +24,34 @@
 
                 <form class="checkout-form">
                     <h5>Victim's Info</h5>
-                    <label>First Name</label>
+                    <label>Full Name</label>
                     <input type="text" placeholder="Optional" />
-                    <label>Last Name</label>
-                    <input type="text" placeholder="Optional" />
+                    <br>
                     <label>Bomb Destination (must be outdoors)</label>
                     <input type="text" placeholder="Park, Neighborhood, Fair, Parking Lot, etc." />
-                    <label>Do you have an exact address?</label>
-                    <label> 
-                        <input type="radio" name="exact-address">&nbsp Yes
-                    </label>
+                    <br>
                     <label>
-                        <input type="radio" name="exact-address">&nbsp No
+                        <input class="checkbox" type="checkbox" name="yes" value="Yes" /> Yes, I have an address for my victim.
                     </label>
-                    <label>Nearest Intersection</label>
+                    <br>
+                    <label>Victim's Nearest Intersection</label>
                     <input type="text" placeholder="Street One" />
+                    <br>
                     <input type="text" placeholder="Street Two" />
-                    <label>Bomb Arrival Time</label>
-                    <input type="text" placeholder="0:00 PM" />
+                    <br>
+                    <label>Bomb Arrival Date & Time</label>
+                    <input type="date"/>
+                    <input type="time"/> 
+                    <br>                    
                     <label>Victim's Phone Number - We will only use this minutes before the attack in order to pinpoint their location.</label>
-                    <input type="text" placeholder="(xxx) xxx-xxxx" />
+                    <input type="tel" placeholder="(xxx) xxx-xxxx" />
                     <label>
-                        <input type="checkbox" name="yes" value="Yes" /> Yes! Text me a video!
+                    <br>
+                        <input class="checkbox" type="checkbox" name="yes" value="Yes" /> Yes! Text me a video!
                     </label>
+                    <br>
                     <label>
-                        <input type="checkbox" name="yes" value="Yes" /> Yes! Tell them it was me!
+                        <input class="checkbox" type="checkbox" name="yes" value="Yes" /> Yes! Tell them it was me!
                     </label>
                 </form>
             
@@ -56,21 +59,24 @@
 
                 <form class="checkout-form">
                     <h5>Sender's Info - Don't worry, we won't tell!</h5>
-                    <label>First Name</label>
+                    <label>Full Name</label>
                     <input type="text" />
-                    <label>Last Name</label>
-                    <input type="text" />
+                    <br>
                     <label>Phone Number</label>
-                    <input type="text" placeholder="(xxx) xxx-xxxx" />
+                    <input type="tel" placeholder="(xxx) xxx-xxxx" />
+                    <br>
                     <label>Email Address</label>
-                    <input type="text" />
+                    <input type="email" />
+                    <br>
                     <label>Billing Address</label>
                     <input type="text" placeholder="Street" />
                     <input type="text" placeholder="Apt #" />
                     <input type="text" placeholder="City" />
                     <input type="text" placeholder="State" />
                     <input type="text" placeholder="Zip" />
+                    <br>
                     <label>Credit Card</label>
+                    <br>
                     <select name="cc-type">
                         <option value="Visa" selected>Visa</option>
                         <option value="Mastercard">Mastercard</option>
@@ -78,8 +84,8 @@
                         <option value="Discover">Discover</option>
                     </select>
                     <input type="text" placeholder="Credit Card Number" />
-                    <input type="text" placeholder="Exp" />
-                    <input type="text" placeholder="CVV" />
+                    <input type="number" placeholder="Exp" />
+                    <input type="number" placeholder="CVV" />
                 </form>
             
                 <a href="#"><button class="bomb-btn" type="button">SEND BOMB</button></a>

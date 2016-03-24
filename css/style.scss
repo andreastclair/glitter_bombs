@@ -349,15 +349,22 @@ footer {
 		}
 	// CHECKOUT
 		.checkout-form {
+			padding: 10px;
 			h5 {
 				line-height: 2em;
 			}
 			input {
 				padding: 5px;
-				margin-bottom: 10px;
+				margin-bottom: 15px;
+				width: 100%;
+				max-width: 800px;
+			}
+			.checkbox {
+				width: 20px;
 			}
 			select {
 				margin-bottom: 10px;
+				width: 48%;
 			}
 		}
 	}	

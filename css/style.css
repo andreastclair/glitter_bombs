@@ -411,13 +411,20 @@ footer {
       margin: 0 auto 20px auto; }
     .product-container .container .product .bomb-highlight {
       margin: 20px auto; }
-  .product-container .container .checkout-form h5 {
-    line-height: 2em; }
-  .product-container .container .checkout-form input {
-    padding: 5px;
-    margin-bottom: 10px; }
-  .product-container .container .checkout-form select {
-    margin-bottom: 10px; }
+  .product-container .container .checkout-form {
+    padding: 10px; }
+    .product-container .container .checkout-form h5 {
+      line-height: 2em; }
+    .product-container .container .checkout-form input {
+      padding: 5px;
+      margin-bottom: 15px;
+      width: 100%;
+      max-width: 800px; }
+    .product-container .container .checkout-form .checkbox {
+      width: 20px; }
+    .product-container .container .checkout-form select {
+      margin-bottom: 10px;
+      width: 48%; }
 
 @media screen and (min-width: 500px) {
   /*
