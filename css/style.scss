@@ -302,7 +302,7 @@ footer {
 }
 .breadcrumbs {
 	color: $grey;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	a {
 		color: $grey;
 		text-decoration: none;
@@ -313,7 +313,7 @@ footer {
 	width: 150px;
 	display: block;
 	border-radius: 25px;
-	margin: 20px auto;
+	margin: 20px auto 50px auto;
 	background-color: $ltgrey;
 	color: $dkgrey;	
 	border: 2px solid $teal;
@@ -341,7 +341,7 @@ footer {
 			flex-direction: column;
 			img {
 				width: 140px;
-				margin: 20px auto;
+				margin: 0 auto 20px auto;
 			}
 			.bomb-highlight {
 				margin: 20px auto;

@@ -373,7 +373,7 @@ footer {
 
 .breadcrumbs {
   color: #bdbaba;
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
   .breadcrumbs a {
     color: #bdbaba;
     text-decoration: none; }
@@ -383,7 +383,7 @@ footer {
   width: 150px;
   display: block;
   border-radius: 25px;
-  margin: 20px auto;
+  margin: 20px auto 50px auto;
   background-color: #F2F1F0;
   color: #333333;
   border: 2px solid #12847e;
@@ -408,7 +408,7 @@ footer {
     flex-direction: column; }
     .product-container .container .product img {
       width: 140px;
-      margin: 20px auto; }
+      margin: 0 auto 20px auto; }
     .product-container .container .product .bomb-highlight {
       margin: 20px auto; }
   .product-container .container .checkout-form h5 {
@@ -482,6 +482,8 @@ footer {
       top: .3em;
       z-index: 10; }
     .content .how .how-steps {
+      max-width: 1150px;
+      margin: 0 auto;
       flex-direction: row;
       justify-content: center;
       align-items: center; }
@@ -507,7 +509,7 @@ footer {
       justify-content: row; }
       .content .order .bomb-container-2 .bomb-type-2 {
         width: 30%;
-        max-width: 250px;
+        max-width: 300px;
         margin: 0 auto; }
         .content .order .bomb-container-2 .bomb-type-2 .bomb-desc {
           visibility: hidden;
@@ -539,50 +541,11 @@ footer {
     Product / Checkout
     ========================================
   */
-  .no-nav {
-    height: 4.3em;
-    position: fixed; }
-
   .breadcrumbs {
-    color: #bdbaba;
-    margin-bottom: 20px; }
-    .breadcrumbs a {
-      color: #bdbaba;
-      text-decoration: none; }
+    margin-left: 0; }
 
-  .bomb-btn {
-    padding: 5px;
-    width: 150px;
-    display: block;
-    border-radius: 25px;
-    margin: 20px auto;
-    background-color: #F2F1F0;
-    color: #333333;
-    border: 2px solid #12847e;
-    font-family: "museo-sans",sans-serif; }
-    .bomb-btn:hover {
-      background-color: #12847e;
-      color: #f7e7d0;
-      text-decoration: none; }
-
-  .horiz-line {
-    width: 100%;
-    border: 1px solid #333333;
-    margin: 20px auto; }
-
-  .product-container .container {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 10em;
-    background-color: #f7e7d0; }
-    .product-container .container .product {
-      display: flex;
-      flex-direction: column; }
-      .product-container .container .product img {
-        width: 140px;
-        margin: 20px auto; }
-      .product-container .container .product .bomb-highlight {
-        margin: 20px auto; } }
+  .product-container .container .product .bomb-highlight p {
+    min-width: 100%; } }
 @media screen and (min-width: 500px) and (min-width: 700px) {
   /*
     ========================================
@@ -693,6 +656,8 @@ footer {
       visibility: visible;
       position: relative;
       margin-top: 1em; }
+      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc p {
+        min-width: 100%; }
       .content .order .bomb-container-2 .bomb-type-2 .bomb-desc span {
         color: #333333;
         font-size: 1.1em; }
@@ -754,7 +719,27 @@ footer {
       margin: 5px; }
     footer .contact p {
       color: #f7e7d0;
-      text-align: left; } }
+      text-align: left; }
+
+  /*
+    ========================================
+    Product / Checkout
+    ========================================
+  */
+  .bomb-btn {
+    margin: 30px auto 50px auto; }
+
+  .product-container .container {
+    padding-top: 10em; }
+    .product-container .container .product {
+      display: flex;
+      flex-direction: row; }
+      .product-container .container .product img {
+        width: 150px;
+        margin-top: 0; }
+      .product-container .container .product .bomb-highlight {
+        margin: 80px auto 0 auto;
+        width: 70%; } }
 @media screen and (min-width: 500px) and (min-width: 700px) and (min-width: 900px) and (min-width: 1000px) {
   /*
     ========================================
@@ -815,6 +800,8 @@ footer {
       visibility: visible;
       position: relative;
       margin-top: 1em; }
+      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc p {
+        min-width: 100%; }
       .content .order .bomb-container-2 .bomb-type-2 .bomb-desc span {
         color: #333333;
         font-size: 1.1em; }
@@ -876,7 +863,27 @@ footer {
       margin: 5px; }
     footer .contact p {
       color: #f7e7d0;
-      text-align: left; } }
+      text-align: left; }
+
+  /*
+    ========================================
+    Product / Checkout
+    ========================================
+  */
+  .bomb-btn {
+    margin: 30px auto 50px auto; }
+
+  .product-container .container {
+    padding-top: 10em; }
+    .product-container .container .product {
+      display: flex;
+      flex-direction: row; }
+      .product-container .container .product img {
+        width: 150px;
+        margin-top: 0; }
+      .product-container .container .product .bomb-highlight {
+        margin: 80px auto 0 auto;
+        width: 70%; } }
 @media screen and (min-width: 500px) and (min-width: 900px) and (min-width: 1000px) {
   /*
     ========================================
@@ -937,6 +944,8 @@ footer {
       visibility: visible;
       position: relative;
       margin-top: 1em; }
+      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc p {
+        min-width: 100%; }
       .content .order .bomb-container-2 .bomb-type-2 .bomb-desc span {
         color: #333333;
         font-size: 1.1em; }
@@ -998,7 +1007,27 @@ footer {
       margin: 5px; }
     footer .contact p {
       color: #f7e7d0;
-      text-align: left; } }
+      text-align: left; }
+
+  /*
+    ========================================
+    Product / Checkout
+    ========================================
+  */
+  .bomb-btn {
+    margin: 30px auto 50px auto; }
+
+  .product-container .container {
+    padding-top: 10em; }
+    .product-container .container .product {
+      display: flex;
+      flex-direction: row; }
+      .product-container .container .product img {
+        width: 150px;
+        margin-top: 0; }
+      .product-container .container .product .bomb-highlight {
+        margin: 80px auto 0 auto;
+        width: 70%; } }
 @media screen and (min-width: 900px) and (min-width: 1000px) {
   /*
     ========================================

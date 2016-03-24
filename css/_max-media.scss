@@ -54,7 +54,9 @@
 					visibility: visible;
 					position: relative;
 					margin-top: 1em;
-					
+					p {
+						min-width: 100%;
+					}
 					span {
 						color: $dkgrey;
 						font-size: 1.1em;
@@ -140,6 +142,35 @@ footer {
 			text-align: left;
 		}
 	}
+}
+
+/*
+  ========================================
+  Product / Checkout
+  ========================================
+*/
+
+.bomb-btn {
+	margin: 30px auto 50px auto;
+}
+.product-container {
+	.container {
+		padding-top: 10em;
+	// PRODUCT
+		.product {
+			display: flex;
+			flex-direction: row;
+			img {
+				width: 150px;
+				margin-top: 0;
+			}
+			.bomb-highlight {
+				margin: 80px auto 0 auto;
+				width: 70%;
+				// padding-top: 3em;
+			}
+		}
+	}	
 }
 
 @import '1100-media';
