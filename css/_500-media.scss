@@ -85,7 +85,6 @@ p {
 			align-items: center;
 			img {
 				width: 48%;
-				// max-width: 300px;
 				margin: 1%;
 			}
 		}
@@ -170,9 +169,19 @@ p {
 	}	
 }
 
+/*
+  ========================================
+  Confirm
+  ========================================
+*/
+
+.confirm-container {
+	min-height: 760px;
+	height: 760px;
+}
+
 
 
 @import '700-media';
 @import '900-media';
-
 }

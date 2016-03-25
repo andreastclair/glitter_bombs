@@ -209,7 +209,8 @@ h6 {
   line-height: 1.2em; }
 
 a {
-  color: #f7e7d0; }
+  color: #f7e7d0;
+  text-decoration: none; }
   a:hover {
     color: #c32237;
     font-weight: bold; }
@@ -291,9 +292,6 @@ header {
       .content .how .how-steps img {
         width: 100%;
         margin: 10px auto; }
-    .content .how .teal-line {
-      visibility: hidden;
-      position: absolute; }
   .content .order {
     position: relative;
     width: 100%;
@@ -322,6 +320,9 @@ header {
         width: 100%;
         max-width: 450px; }
     .content .order .bomb-container-2 {
+      visibility: hidden;
+      position: absolute; }
+    .content .order .select-button {
       visibility: hidden;
       position: absolute; }
   .content .track {
@@ -446,140 +447,454 @@ footer {
 .confirm-container .container {
   width: 90%;
   margin: 0 auto;
-  padding-top: 10em;
-  background-color: #f7e7d0; }
-  .confirm-container .container body {
-    padding: 2em;
-    background: #001;
-    color: #eee;
-    margin: 0 auto;
-    text-align: center;
-    font: normal 100% Arial; }
-  .confirm-container .container .explode {
-    text-align: left;
-    display: inline-block;
-    position: relative;
-    padding: 106px;
-    transform-origin: center center;
-    animation: explode-rotate 20s linear infinite; }
-  .confirm-container .container .frag {
+  padding: 10em 0 5em 0;
+  background-color: #f7e7d0;
+  text-align: center; }
+  .confirm-container .container .confirmation-info {
+    width: 60%;
+    margin: 0 auto; }
+    .confirm-container .container .confirmation-info h2 {
+      font-size: 35.2px;
+      font-size: 2.2em;
+      line-height: 3em; }
+    .confirm-container .container .confirmation-info h3 {
+      line-height: 1.5em; }
+    .confirm-container .container .confirmation-info a {
+      color: #12847e; }
+      .confirm-container .container .confirmation-info a:hover {
+        color: #c32237;
+        font-weight: bold; }
+  .confirm-container .container .punt {
     position: absolute;
-    transform-origin: 3px 30px;
+    left: 50px;
+    top: 50px;
+    height: 4px;
+    width: 4px;
+    border-radius: 2px;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-iteration-count: 3; }
+  .confirm-container .container .blauw {
+    position: absolute;
+    left: 450px;
+    top: 250px;
+    height: 400px;
+    width: 200px; }
+  .confirm-container .container .blauw div {
+    background-color: #00f;
+    animation-delay: 1.5s; }
+  .confirm-container .container .paars {
+    position: absolute;
+    left: 200px;
+    top: 10px;
+    height: 400px;
+    width: 200px; }
+  .confirm-container .container .paars div {
+    background-color: #70f;
+    animation-delay: 2.5s; }
+  .confirm-container .container .rood {
+    position: absolute;
+    left: 800px;
+    top: 50px;
+    height: 400px;
+    width: 200px; }
+  .confirm-container .container .rood div {
+    background-color: #f00;
+    animation-delay: 4s; }
+  .confirm-container .container .oranje {
+    position: absolute;
+    left: 1000px;
+    top: 400px;
+    height: 400px;
+    width: 200px; }
+  .confirm-container .container .oranje div {
+    background-color: #f50;
+    animation-delay: 4.5s; }
+  .confirm-container .container .geel {
+    position: absolute;
+    left: 1250px;
+    top: 100px;
+    height: 400px;
+    width: 200px; }
+  .confirm-container .container .geel div {
+    background-color: #fb0;
+    animation-delay: 6s; }
+  .confirm-container .container .groen {
+    position: absolute;
+    left: 1500px;
+    top: 450px;
+    height: 400px;
+    width: 200px; }
+  .confirm-container .container .groen div {
+    background-color: #0f0;
+    opacity: 0;
+    animation-delay: 7.5s; }
+  .confirm-container .container .blauw2 {
+    position: absolute;
+    left: 550px;
+    top: 350px;
+    height: 400px;
+    width: 200px; }
+  .confirm-container .container .blauw2 div {
+    background-color: #00f;
+    animation-delay: 8.5s; }
+  .confirm-container .container .paars2 {
+    position: absolute;
+    left: 300px;
+    top: 110px;
+    height: 400px;
+    width: 200px; }
+  .confirm-container .container .paars2 div {
+    background-color: #7700ff;
+    animation-delay: 9.5s; }
+  .confirm-container .container .rood2 {
+    position: absolute;
+    left: 900px;
+    top: 150px;
+    height: 400px;
+    width: 200px; }
+  .confirm-container .container .rood2 div {
+    background-color: #ff0000;
+    animation-delay: 12.5s; }
+  .confirm-container .container .oranje2 {
+    position: absolute;
+    left: 1100px;
+    top: 500px;
+    height: 400px;
+    width: 200px; }
+  .confirm-container .container .oranje2 div {
+    background-color: #ff5500;
+    animation-delay: 15s; }
+  .confirm-container .container .geel2 {
+    position: absolute;
+    left: 1350px;
+    top: 200px;
+    height: 400px;
+    width: 200px; }
+  .confirm-container .container .geel2 div {
+    background-color: #ffbb00;
+    animation-delay: 17.5s; }
+  .confirm-container .container .groen2 {
+    position: absolute;
+    left: 1600px;
+    top: 550px;
+    height: 400px;
+    width: 200px; }
+  .confirm-container .container .groen2 div {
+    background-color: #00ff00;
+    animation-delay: 20s; }
+  .confirm-container .container .punt:nth-child(1) {
+    animation-name: explode1; }
+  .confirm-container .container .punt:nth-child(2) {
+    animation-name: explode2; }
+  .confirm-container .container .punt:nth-child(3) {
+    animation-name: explode3; }
+  .confirm-container .container .punt:nth-child(4) {
+    animation-name: explode4; }
+  .confirm-container .container .punt:nth-child(5) {
+    animation-name: explode5; }
+  .confirm-container .container .punt:nth-child(6) {
+    animation-name: explode6; }
+  .confirm-container .container .punt:nth-child(7) {
+    animation-name: explode7; }
+  .confirm-container .container .punt:nth-child(8) {
+    animation-name: explode8; }
+  .confirm-container .container .punt:nth-child(9) {
+    animation-name: explode9; }
+  .confirm-container .container .punt:nth-child(10) {
+    animation-name: explode10; }
+  .confirm-container .container .punt:nth-child(11) {
+    animation-name: explode11; }
+  .confirm-container .container .punt:nth-child(12) {
+    animation-name: explode12; }
+  .confirm-container .container .punt:nth-child(13) {
+    animation-name: explode13; }
+  .confirm-container .container .punt:nth-child(14) {
+    animation-name: explode14; }
+  .confirm-container .container .punt:nth-child(15) {
+    animation-name: explode15; }
+  .confirm-container .container .punt:nth-child(16) {
+    animation-name: explode16; }
+  .confirm-container .container .punt:nth-child(17) {
+    animation-name: explode17; }
+  .confirm-container .container .punt:nth-child(18) {
+    animation-name: explode18; }
+  .confirm-container .container .punt:nth-child(19) {
+    animation-name: explode19; }
+  .confirm-container .container .punt:nth-child(20) {
+    animation-name: explode20; }
+  .confirm-container .container .punt:nth-child(21) {
+    animation-name: explode21; }
+  .confirm-container .container .punt:nth-child(22) {
+    animation-name: explode22; }
+  .confirm-container .container .punt:nth-child(23) {
+    animation-name: explode23; }
+  .confirm-container .container .punt:nth-child(24) {
+    animation-name: explode24; }
+@keyframes explode1 {
+  0% {
     opacity: 0; }
-    .confirm-container .container .frag:before, .confirm-container .container .frag:after {
-      position: absolute;
-      content: "";
-      width: 6px;
-      height: 60px;
-      border-radius: 40%;
-      background-color: purple;
-      transform-origin: inherit;
-      animation: none 2s ease infinite alternate; }
-    .confirm-container .container .frag:before {
-      background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.65) 0%, rgba(255, 0, 0, 0) 100%);
-      animation-name: explode-frag-before; }
-    .confirm-container .container .frag:after {
-      background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 0.65) 100%);
-      animation-name: explode-frag-after; }
-    .confirm-container .container .frag:nth-of-type(2n):before, .confirm-container .container .frag:nth-of-type(2n):after {
-      animation-delay: 0.5s;
-      background-color: yellow; }
-    .confirm-container .container .frag:nth-of-type(3n):before, .confirm-container .container .frag:nth-of-type(3n):after {
-      animation-delay: 0.33333s;
-      background-color: orange; }
-    .confirm-container .container .frag:nth-of-type(1) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(0deg); }
-    .confirm-container .container .frag:nth-of-type(2) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(7.5deg); }
-    .confirm-container .container .frag:nth-of-type(3) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(15deg); }
-    .confirm-container .container .frag:nth-of-type(4) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(22.5deg); }
-    .confirm-container .container .frag:nth-of-type(5) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(30deg); }
-    .confirm-container .container .frag:nth-of-type(6) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(37.5deg); }
-    .confirm-container .container .frag:nth-of-type(7) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(45deg); }
-    .confirm-container .container .frag:nth-of-type(8) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(52.5deg); }
-    .confirm-container .container .frag:nth-of-type(9) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(60deg); }
-    .confirm-container .container .frag:nth-of-type(10) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(67.5deg); }
-    .confirm-container .container .frag:nth-of-type(11) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(75deg); }
-    .confirm-container .container .frag:nth-of-type(12) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(82.5deg); }
-    .confirm-container .container .frag:nth-of-type(13) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(90deg); }
-    .confirm-container .container .frag:nth-of-type(14) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(97.5deg); }
-    .confirm-container .container .frag:nth-of-type(15) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(105deg); }
-    .confirm-container .container .frag:nth-of-type(16) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(112.5deg); }
-    .confirm-container .container .frag:nth-of-type(17) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(120deg); }
-    .confirm-container .container .frag:nth-of-type(18) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(127.5deg); }
-    .confirm-container .container .frag:nth-of-type(19) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(135deg); }
-    .confirm-container .container .frag:nth-of-type(20) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(142.5deg); }
-    .confirm-container .container .frag:nth-of-type(21) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(150deg); }
-    .confirm-container .container .frag:nth-of-type(22) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(157.5deg); }
-    .confirm-container .container .frag:nth-of-type(23) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(165deg); }
-    .confirm-container .container .frag:nth-of-type(24) {
-      opacity: 1;
-      transform: translate(-3px, -30px) rotate(172.5deg); }
-@keyframes explode-frag-before {
-  0% {
-    transform: translateY(-10px);
-    filter: blur(3px); }
-  20% {
-    filter: blur(0); }
+  25% {
+    opacity: 1;
+    transform: translate(0px, -100px); }
+  50% {
+    opacity: 0.2; }
   100% {
-    transform: translateY(-100px); } }
-@keyframes explode-frag-after {
+    opacity: 0;
+    transform: translate(0px, 0px); } }
+@keyframes explode2 {
   0% {
-    transform: translateY(10px);
-    filter: blur(3px); }
-  20% {
-    filter: blur(0); }
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(100px, 0px); }
+  50% {
+    opacity: 0.2; }
   100% {
-    transform: translateY(100px); } }
-@keyframes explode-rotate {
+    opacity: 0;
+    transform: translate(100px, 100px); } }
+@keyframes explode3 {
   0% {
-    transform: rotate(0); }
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(0px, 100px); }
+  50% {
+    opacity: 0.2; }
   100% {
-    transform: rotate(180deg); } }
+    opacity: 0;
+    transform: translate(0px, 200px); } }
+@keyframes explode4 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(-100px, 0px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(-100px, 100px); } }
+@keyframes explode5 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(-70px, -70px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(-70px, 30px); } }
+@keyframes explode6 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(70px, -70px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(70px, 30px); } }
+@keyframes explode7 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(70px, 70px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(70px, 170px); } }
+@keyframes explode8 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(-70px, 70px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(-70px, 170px); } }
+@keyframes explode9 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(-200px, 0px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(-200px, 100px); } }
+@keyframes explode10 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(0px, -200px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(0px, -100px); } }
+@keyframes explode11 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(200px, 0px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(200px, 100px); } }
+@keyframes explode12 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(0px, 200px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(0px, 300px); } }
+@keyframes explode13 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(-180px, -70px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(-180px, 30px); } }
+@keyframes explode14 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(-70px, -180px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(-70px, -80px); } }
+@keyframes explode15 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(70px, -180px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(70px, -80px); } }
+@keyframes explode16 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(180px, -70px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(180px, 30px); } }
+@keyframes explode17 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(180px, 70px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(180px, 170px); } }
+@keyframes explode18 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(70px, 180px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(70px, 280px); } }
+@keyframes explode19 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(-70px, 180px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(-70px, 280px); } }
+@keyframes explode20 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(-180px, 70px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(-180px, 170px); } }
+@keyframes explode21 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(-140px, -140px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(-140px, -40px); } }
+@keyframes explode22 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(140px, -140px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(140px, -40px); } }
+@keyframes explode23 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(140px, 140px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(140px, 240px); } }
+@keyframes explode24 {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    transform: translate(-140px, 140px); }
+  50% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    transform: translate(-140px, 240px); } }
 @media screen and (min-width: 500px) {
   /*
     ========================================
@@ -706,7 +1021,16 @@ footer {
     margin-left: 0; }
 
   .product-container .container .product .bomb-highlight p {
-    min-width: 100%; } }
+    min-width: 100%; }
+
+  /*
+    ========================================
+    Confirm
+    ========================================
+  */
+  .confirm-container {
+    min-height: 760px;
+    height: 760px; } }
 @media screen and (min-width: 500px) and (min-width: 700px) {
   /*
     ========================================
@@ -717,49 +1041,41 @@ footer {
     max-width: 400px; }
   .content .order h2 {
     top: -.1em; }
-  .content .order .bomb-container-2 .bomb-type-2 .bomb-desc {
+  .content .order .bomb-container-2 {
+    padding: 4em 0 1em 0; }
+    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc {
+      visibility: visible;
+      position: relative;
+      margin-top: 1em; }
+      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc span {
+        color: #333333;
+        font-size: 1.1em; }
+  .content .order .select-button {
     visibility: visible;
     position: relative;
-    margin-top: 1em; }
-    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc span {
-      color: #333333;
-      font-size: 1.1em; }
-    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button {
+    display: flex;
+    justify-content: space-around; }
+    .content .order .select-button button {
       padding: 5px;
-      width: 80%;
+      width: 150px;
       display: block;
       border-radius: 25px;
-      margin: 20px auto 0 auto;
+      margin: 20px auto;
       background-color: #F2F1F0;
       color: #333333;
       border: 2px solid #12847e;
       font-family: "museo-sans",sans-serif; }
-      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button:hover {
+      .content .order .select-button button:hover {
         background-color: #12847e;
         color: #f7e7d0;
         text-decoration: none; }
-  .content .track {
-    z-index: 85; }
-    .content .track h2 {
-      font-size: 192px;
-      font-size: 12em;
-      color: rgba(247, 231, 208, 0.3);
-      transform: rotate(-90deg);
-      transform-origin: left top 0;
-      position: absolute;
-      top: 2.5em;
-      left: .25em;
-      z-index: 10; }
-    .content .track .order-number {
-      width: 90%;
-      padding: 15px;
-      position: relative;
-      z-index: 95;
-      text-align: center; }
-    .content .track iframe {
-      width: 90%;
-      display: block;
-      margin: 10px auto; }
+  .content .track .order-number {
+    width: 90%;
+    text-align: center; }
+  .content .track iframe {
+    width: 90%;
+    display: block;
+    margin: 10px auto; }
 
   /*
     ========================================
@@ -780,13 +1096,17 @@ footer {
       margin: 5px; }
     footer .contact p {
       color: #f7e7d0;
-      text-align: left; } }
-@media screen and (min-width: 500px) and (min-width: 700px) and (min-width: 900px) {
+      text-align: left; }
+
   /*
     ========================================
-    Header
+    Confirm
     ========================================
   */
+  .confirm-container {
+    min-height: 860px;
+    height: 860px; } }
+@media screen and (min-width: 500px) and (min-width: 700px) and (min-width: 900px) {
   /*
     ========================================
     Content
@@ -813,38 +1133,14 @@ footer {
       font-size: 256px;
       font-size: 16em;
       top: -.2em; }
-    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc {
-      visibility: visible;
-      position: relative;
-      margin-top: 1em; }
-      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc p {
-        min-width: 100%; }
-      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc span {
-        color: #333333;
-        font-size: 1.1em; }
-      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button {
-        padding: 5px;
-        width: 80%;
-        border-radius: 25px;
-        margin-top: 20px;
-        background-color: #F2F1F0;
-        color: #333333;
-        border: 2px solid #12847e;
-        font-family: "museo-sans",sans-serif; }
-        .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button:hover {
-          background-color: #12847e;
-          color: #f7e7d0;
-          border: 2px solid #333333; }
+    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc p {
+      min-width: 100%; }
     .content .track {
       z-index: 85; }
       .content .track h2 {
         font-size: 240px;
         font-size: 15em;
-        color: rgba(247, 231, 208, 0.3);
-        transform: rotate(-90deg);
-        transform-origin: left top 0;
-        position: absolute;
-        top: 2.45em;
+        top: 2.5em;
         left: .29em;
         z-index: 10; }
       .content .track .order-number {
@@ -866,22 +1162,6 @@ footer {
     Footer
     ========================================
   */
-  footer {
-    width: 100%;
-    background-color: #333333;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-    footer .extra p {
-      color: #f7e7d0;
-      text-align: left; }
-    footer .social .icon {
-      width: 40px;
-      margin: 5px; }
-    footer .contact p {
-      color: #f7e7d0;
-      text-align: left; }
-
   /*
     ========================================
     Product / Checkout
@@ -943,11 +1223,6 @@ footer {
 @media screen and (min-width: 500px) and (min-width: 900px) {
   /*
     ========================================
-    Header
-    ========================================
-  */
-  /*
-    ========================================
     Content
     ========================================
   */
@@ -972,38 +1247,14 @@ footer {
       font-size: 256px;
       font-size: 16em;
       top: -.2em; }
-    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc {
-      visibility: visible;
-      position: relative;
-      margin-top: 1em; }
-      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc p {
-        min-width: 100%; }
-      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc span {
-        color: #333333;
-        font-size: 1.1em; }
-      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button {
-        padding: 5px;
-        width: 80%;
-        border-radius: 25px;
-        margin-top: 20px;
-        background-color: #F2F1F0;
-        color: #333333;
-        border: 2px solid #12847e;
-        font-family: "museo-sans",sans-serif; }
-        .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button:hover {
-          background-color: #12847e;
-          color: #f7e7d0;
-          border: 2px solid #333333; }
+    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc p {
+      min-width: 100%; }
     .content .track {
       z-index: 85; }
       .content .track h2 {
         font-size: 240px;
         font-size: 15em;
-        color: rgba(247, 231, 208, 0.3);
-        transform: rotate(-90deg);
-        transform-origin: left top 0;
-        position: absolute;
-        top: 2.45em;
+        top: 2.5em;
         left: .29em;
         z-index: 10; }
       .content .track .order-number {
@@ -1025,22 +1276,6 @@ footer {
     Footer
     ========================================
   */
-  footer {
-    width: 100%;
-    background-color: #333333;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-    footer .extra p {
-      color: #f7e7d0;
-      text-align: left; }
-    footer .social .icon {
-      width: 40px;
-      margin: 5px; }
-    footer .contact p {
-      color: #f7e7d0;
-      text-align: left; }
-
   /*
     ========================================
     Product / Checkout
@@ -1102,11 +1337,6 @@ footer {
 @media screen and (min-width: 900px) {
   /*
     ========================================
-    Header
-    ========================================
-  */
-  /*
-    ========================================
     Content
     ========================================
   */
@@ -1131,38 +1361,14 @@ footer {
       font-size: 256px;
       font-size: 16em;
       top: -.2em; }
-    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc {
-      visibility: visible;
-      position: relative;
-      margin-top: 1em; }
-      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc p {
-        min-width: 100%; }
-      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc span {
-        color: #333333;
-        font-size: 1.1em; }
-      .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button {
-        padding: 5px;
-        width: 80%;
-        border-radius: 25px;
-        margin-top: 20px;
-        background-color: #F2F1F0;
-        color: #333333;
-        border: 2px solid #12847e;
-        font-family: "museo-sans",sans-serif; }
-        .content .order .bomb-container-2 .bomb-type-2 .bomb-desc button:hover {
-          background-color: #12847e;
-          color: #f7e7d0;
-          border: 2px solid #333333; }
+    .content .order .bomb-container-2 .bomb-type-2 .bomb-desc p {
+      min-width: 100%; }
     .content .track {
       z-index: 85; }
       .content .track h2 {
         font-size: 240px;
         font-size: 15em;
-        color: rgba(247, 231, 208, 0.3);
-        transform: rotate(-90deg);
-        transform-origin: left top 0;
-        position: absolute;
-        top: 2.45em;
+        top: 2.5em;
         left: .29em;
         z-index: 10; }
       .content .track .order-number {
@@ -1184,22 +1390,6 @@ footer {
     Footer
     ========================================
   */
-  footer {
-    width: 100%;
-    background-color: #333333;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-    footer .extra p {
-      color: #f7e7d0;
-      text-align: left; }
-    footer .social .icon {
-      width: 40px;
-      margin: 5px; }
-    footer .contact p {
-      color: #f7e7d0;
-      text-align: left; }
-
   /*
     ========================================
     Product / Checkout
